@@ -1,0 +1,540 @@
+:root {
+	--color_bkg_0d: #0d0d0d;
+	--color_bkg_11: #111;
+	--color_bkg_1b: #1b1b1b;
+
+	--color_brd_33: #333;
+
+	--color_txt_88: #888;
+	--color_txt_aa: #aaa;
+	--color_txt_cc: #ccc;
+	--color_txt_dd: #ddd;
+	--color_txt_ee: #eee;
+}
+
+html,
+body,
+.metabar,
+.postActions,
+.cardChromeless,
+.canvas-renderer,
+.zoomable:before,
+/* sticky footer*/
+.u-backgroundWhite.u-bottom0,
+.overlay--dark .overlay-dialog,
+.overlay--dark .overlay-title--context,
+.catalogPreview--card .catalogPreview-header,
+.responsesStream-showOtherResponses.cardChromeless {
+	background-color: var(--color_bkg_0d) !important;
+	color: var(--color_txt_88) !important;
+}
+
+.drawer,
+.drawer-content,
+.quoteResponses,
+.quoteResponses-section--tips,
+.quoteResponses-section--tips:last-child,
+.js-carouselInner section .u-borderBox {
+	background-color: var(--color_bkg_0d) !important;
+	color: var(--color_txt_aa) !important;
+}
+
+input {
+	background-color: var(--color_bkg_0d) !important;
+	color: var(--color_txt_dd) !important;
+}
+
+.tags li,
+.tags a:hover,
+.tags--borderless > a,
+.tags--borderless > li,
+.tags--borderless > .button,
+.tags--borderless .tag-button,
+.u-backgroundColorWhite {
+	background-color: var(--color_bkg_0d) !important;
+	border: 0 !important;
+}
+
+pre,
+code,
+.overlay,
+.tags--postTags > a,
+.tags--postTags > li,
+.tags--postTags > .button,
+.tags--postTags .tag-button {
+	background-color: var(--color_bkg_0d) !important;
+}
+
+article,
+.site-main,
+.radioInput,
+.screenContent,
+.u-backgroundWhite,
+.drawer-keyboardKey,
+.overlay-dialog--email,
+.overlay-dialog--signin,
+.metabar + .u-tintBgColor,
+.u-backgroundGrayLightest,
+.u-sm-background--brandSea,
+.u-backgroundColorGrayLight,
+.clapButton--largePill.is-active {
+	background-color: var(--color_bkg_11) !important;
+}
+
+.js-trackedPromo,
+.upgradePage-valuePropHeader,
+.u-background--brandDust,
+.u-background--brandPlum,
+.u-background--brandRose,
+.u-background--brandSage,
+.u-background--brandSageLighter,
+.u-background--brandSand,
+.u-background--brandSea,
+.u-background--brandSky,
+.streamItemConversationItem--summary {
+	background-color: var(--color_bkg_1b) !important;
+}
+
+.popover-arrow:after,
+.popover .popover-inner,
+.popover--dark > .popover-inner,
+.popover--dark > .popover-arrow:after,
+.u-backgroundTransparentBlackLightest,
+input::-webkit-calendar-picker-indicator:hover {
+	background: var(--color_bkg_1b) !important;
+}
+
+.radioInput.is-active:after,
+.radio:checked + .radioInput:after,
+body .button.button--filled,
+.button.button--filled:focus,
+.button.button--filled:hover,
+.button.button--filled:active,
+.overlay--dark .overlay-title,
+.u-accentColor--fillWhenActive.is-active,
+.button--primary.button--withChrome.is-active,
+.button--primary.button--withChrome.is-active:focus,
+.button--primary.button--withChrome.is-active:hover,
+.button--primary.button--withChrome.is-active:active,
+body.is-withMagicUnderlines .markup--quote .markup--anchor,
+.js-floatingMultirecommendCount.u-accentColor--backgroundNormal,
+.js-stickyFooter .button--dark.button--activity.is-counter,
+.js-stickyFooter .button--dark.button--primary.button--withChrome.is-active,
+.js-stickyFooter .button--withChrome.is-active .button-label.button-activeState {
+	background-color: var(--accent_main) !important;
+	color: var(--accent_main_text) !important;
+}
+
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span,
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
+	background-color: var(--accent_link) !important;
+	color: var(--color_bkg_0d) !important;
+}
+
+.u-tintBgColor div,
+.u-backgroundTransparentWhiteDarker {
+	background-color: transparent !important;
+}
+
+div.popover,
+.readNextPromo,
+footer .container > div {
+	background: transparent none !important;
+}
+
+/* fade out content - non-subscription */
+.postFade:before {
+	background-image: linear-gradient(to bottom, transparent 0, var(--color_bkg_11) 100%) !important;
+}
+
+::-webkit-input-placeholder {
+	color: var(--color_txt_88) !important;
+}
+::-moz-placeholder {
+	color: var(--color_txt_88) !important;
+}
+::placeholder {
+	color: var(--color_txt_88) !important;
+}
+
+.button--link,
+.drawer-annotation,
+.u-textColorDarkest,
+.button--chromeless,
+.chartTabs .chartTab,
+.homeContainer-nextUp,
+.popover-prePublishTags,
+.inputGroup-description,
+hr.section-divider:before,
+.inlineEditor-placeholder,
+.licenseSelector-description,
+.listChoice-textColumn--right,
+.popover-prePublishSaving,
+.popover-prePublishDescription,
+.list-item.list-item--inactive {
+	color: var(--color_txt_88) !important;
+}
+
+p,
+time,
+article,
+section,
+figcaption,
+.label,
+.button,
+h3 a.link,
+h4 a.link,
+.tags .link,
+.chartHelper,
+.popover-inner,
+.heading-prefix,
+.postMetaInline,
+.overlay-content,
+.lockedPostHeader,
+.u-textColorNormal,
+.u-textColorDarker,
+.u-textColorLighter,
+a.link.link--darker,
+a.link.link--darken,
+a.link.u-textColorDarker,
+.creditCardForm label,
+.quoteItem-attribution,
+.markup--mixtapeEmbed-em,
+.lockedPostHeader .svgIcon,
+.sortableTable-text--visibility,
+.overlay--dark .overlay-content,
+.popover-inner .popover-description,
+.u-tintSpectrum .u-baseColor--textDark,
+.u-tintSpectrum .u-baseColor--textNormal,
+.u-resetSpectrum .u-baseColor--buttonDark,
+.catalogPreview--card .catalogPreview-name,
+.u-tintSpectrum .u-baseColor--link.link--darker,
+.js-carouselInner section .u-baseColor--textDarker,
+.button--withChrome.is-active .button-label.button-activeState {
+	color: var(--color_txt_aa) !important;
+	fill: var(--color_txt_aa) !important;
+}
+
+strong,
+.heading-title,
+.graf--pullquote,
+.u-textColorDark,
+.u-textColorWhite,
+.u-baseColor--buttonDark,
+.u-textColor--brandBlack,
+.label--withIcon .svgIcon,
+.popover-inner .popover-title,
+.chartTabs .is-active .chartTab,
+.uiScale-ui--large.ui-brandTitle,
+.uiScale-ui--large .ui-brandTitle,
+.u-backgroundTransparentWhiteDarker,
+.u-tintSpectrum .u-baseColor--textDarker,
+.u-tintSpectrum .svgIcon--logoWordmark,
+.u-tintSpectrum .svgIcon--logoWordmark svg,
+.u-accentColor--buttonDark.button--filled,
+.u-accentColor--buttonDark.button--withChrome.is-active {
+	color: var(--color_txt_cc) !important;
+	fill: var(--color_txt_cc) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color_txt_dd) !important;
+}
+
+.button--twitter .button-label,
+.button--filled.is-active .button-label,
+.button--withChrome.is-active .button-label {
+	color: var(--color_bkg_0d) !important;
+}
+
+.button,
+.list-item,
+.chartTabs li,
+.cardChromeless,
+.lockedPostHeader,
+.graf--blockquote,
+.u-borderBlackLightest,
+.u-borderBottomGrayLight,
+.u-borderBottomLight,
+.u-borderBottomLighter,
+.u-borderBottomLightest,
+.u-borderBottomNormal,
+.u-borderBottomWhite15,
+.u-borderCardBackground,
+.u-borderCardBorder,
+.u-borderColorDark,
+.u-borderColorDarker,
+.u-borderColorLight,
+.u-borderColorLighter,
+.u-borderColorLightest,
+.u-borderColorNormal,
+.u-borderWhite,
+.u-borderDark,
+.u-borderDarker,
+.u-borderLeftBleed185:before,
+.u-borderLeftBleed250:before,
+.u-borderLeftBleed300:before,
+.u-borderLeftLighter,
+.u-borderLight,
+.u-borderLighter,
+.u-borderLighterHover:hover,
+.u-borderLightest,
+.u-borderNormal,
+.u-borderRightLighter,
+.u-borderRightTransparentWhiteLighter,
+.u-borderRightWhite15,
+.u-borderTop2,
+.u-borderTopLight,
+.u-borderTopLighter,
+.u-borderTopLightest,
+.u-borderTopColorDarker,
+.stats-title--chart,
+.table--bordered tr,
+.streamItem-cardInner,
+.textInput--underlined,
+.u-borderColor--brandSea,
+.u-baseColor--buttonDark,
+.popover-prePublishBorder,
+.u-accentColor--borderDark,
+.chartPage-verticalDivider,
+.streamItemConversation-divider,
+.js-carouselInner section .u-borderBox,
+.table-thead--borderLeftBleed650:before,
+.u-resetSpectrum .u-baseColor--buttonDark,
+.u-tintSpectrum .u-baseColor--borderLight,
+.catalogPreview--card .catalogPreview-header,
+.heading--borderedTop .heading-tabsItem.is-active,
+.heading--borderedBottom .heading-tabsItem.is-active,
+.streamItemConversationItem--preview:not(:first-child),
+.responsesStream-showOtherResponses.cardChromeless:hover {
+	border-color: var(--color_brd_33) !important;
+}
+
+.chartTabs .chartTab {
+	border-left-color: var(--color_brd_33) !important;
+}
+
+/* header exanding search input */
+.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
+	border: 1px solid var(--color_brd_33) !important;
+}
+
+.u-borderTopLightest80:before,
+.u-backgroundTransparentBlackDark,
+.postActions .buttonSet-separator,
+.postActionsBar .buttonSet-separator {
+	background-color: var(--color_brd_33) !important;
+}
+
+.u-accentColor--buttonNormal:hover {
+	border-color: var(--color_hover) !important;
+}
+
+.list-item:not(.list-item--separator) {
+	border: 0 !important;
+}
+
+line.bargraph-gridLine {
+	stroke: var(--color_brd_33) !important;
+}
+
+.popover-inner,
+.graf--mixtapeEmbed,
+.u-baseColor--boxShadow,
+.u-backgroundColorWhite,
+.u-boxShadow1px4pxCardBorder,
+.u-borderBox img.u-baseColor--boxShadow {
+	box-shadow: 0 1px 2px var(--color_brd_33), 0 -1px 2px var(--color_brd_33) !important;
+}
+.u-boxShadow {
+	box-shadow: 0 1px 7px var(--color_bkg_0d) !important;
+	border: 0 !important;
+}
+.popover-arrow:after {
+	box-shadow: -1px -1px 1px -1px var(--color_brd_33) !important;
+}
+.popover--top .popover-arrow:after {
+	box-shadow: 1px 1px 1px 0 var(--color_brd_33) !important;
+}
+.responsesStream-editor {
+	box-shadow: none !important;
+}
+
+text,
+.button--dark svg,
+.overlay-title path,
+.button-defaultState svg,
+.bargraph-xAxis .bargraph-yAxis,
+.u-accentColor--buttonNormal .svgIcon svg,
+.u-accentColor--buttonNormal .icon:before {
+	fill: currentColor !important;
+}
+
+/* accent colors */
+.metabar,
+div.u-tintBgColor {
+	background-color: var(--accent_header) !important;
+}
+
+a,
+a.link,
+a.link .u-baseColor--textDark,
+.link--accent:focus,
+.link--accent:hover,
+.link--accent:active,
+.u-accentColor--buttonNormal .icon:before,
+.u-tintSpectrum .u-baseColor--iconLight.svgIcon,
+.u-tintSpectrum .u-baseColor--iconLight .svgIcon,
+.u-tintSpectrum .u-baseColor--buttonLight .svgIcon,
+.u-tintSpectrum .u-baseColor--buttonLight .icon:before,
+.u-tintSpectrum .u-baseColor--buttonNormal .icon:before,
+.u-tintSpectrum .u-baseColor--buttonNormal .svgIcon,
+.u-tintSpectrum .u-baseColor--link,
+.u-tintSpectrum .u-baseColor--buttonLight,
+.u-tintSpectrum .u-baseColor--buttonNormal,
+.u-tintSpectrum .u-accentColor--buttonDark,
+.u-tintSpectrum .u-accentColor--buttonNormal:not(.clapButton--largePill),
+.button .svgIcon:not(.svgIcon--clap):not(.svgIcon--clapFilled),
+.suggestionSidebar .button.is-active:not(.button--withIcon) .button-activeState,
+.u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+.u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
+	color: var(--accent_link) !important;
+	fill: var(--accent_link) !important;
+	border-color: var(--accent_link) !important;
+}
+
+a:focus,
+a:hover,
+a:active,
+a.link:hover,
+.button--dark:hover svg,
+a.button:hover,
+a.button:hover .svgIcon,
+a.button:focus .svgIcon,
+a.button:active .svgIcon,
+a.button.is-active .svgIcon,
+li .button--chromeless:hover {
+	color: var(--accent_hover) !important;
+	fill: var(--accent_hover) !important;
+}
+
+body.is-withMagicUnderlines .markup--anchor {
+	background-image: linear-gradient(to bottom, var(--accent_underline) 50%, rgba(0, 0, 0, 0) 50%) !important;
+	/* including underline settings to prevent them being overridden */
+	background-repeat: repeat-x !important;
+	background-size: 2px .1em !important;
+	background-position: 0 1.07em !important;
+}
+
+.u-tintSpectrum .u-baseColor--link:hover,
+.u-tintSpectrum .u-baseColor--buttonNormal:hover,
+.u-tintSpectrum .u-accentColor--buttonDark:hover,
+.u-tintSpectrum .u-baseColor--link.link--darken:hover,
+.u-tintSpectrum .u-baseColor--link.link--darken:focus,
+.u-tintSpectrum .u-baseColor--link.link--darken:active,
+.u-accentColor--textNormal.u-accentColor--textDarken:hover,
+.u-tintSpectrum .u-baseColor--link.link--darkenOnHover:hover,
+.u-tintSpectrum .u-accentColor--buttonNormal:not(.clapButton--largePill):hover {
+	color: var(--accent_hover) !important;
+	fill: var(--accent_hover) !important;
+	border-color: var(--accent_hover) !important;
+}
+
+.u-textColorNavy,
+.u-textColor--brandSage,
+.u-textColor--brandSea,
+.u-textColor--brandSky,
+.u-textColor--brandPlum,
+.u-textColor--brandRose,
+.u-textColor--brandSand,
+.u-textColorGreenNormal,
+.u-accentColor--textDark,
+.u-accentColor--textNormal,
+.u-accentColor--borderNormal,
+.u-accentColor--iconNormal.svgIcon,
+.u-accentColor--iconNormal .svgIcon,
+.u-accentColor--buttonNormal .svgIcon,
+.u-baseColor--iconNormal.avatar-halo,
+.u-tintSpectrum .svgIcon--logoMonogram,
+.u-tintSpectrum .svgIcon--logoMonogram svg,
+.clapButton:disabled .svgIcon--clap,
+.clapButton:disabled .svgIcon--clapFilled,
+.u-accentColor--buttonNormal .svgIcon--clap {
+	color: var(--accent_main) !important;
+	fill: var(--accent_main) !important;
+}
+
+.u-strokeGreen {
+	stroke: var(--accent_main) !important;
+}
+.u-strokeRose {
+	stroke: var(--color_txt_88) !important;
+}
+
+.button:hover,
+.tags--postTags > a:hover,
+.tags--postTags > li:hover,
+.tags--postTags > .button:hover,
+.tags--postTags .tag-button:hover,
+.u-accentColor--borderNormal,
+.postArticle.is-withAccentColors .markup--user,
+.postArticle.is-withAccentColors .markup--query,
+.u-accentColor--buttonNormal:not(.clapButton--largePill) {
+	color: var(--accent_main) !important;
+	border-color: var(--accent_main) !important;
+}
+
+.u-accentColor--buttonDark.button--filled,
+.u-accentColor--buttonDark.button--withChrome.is-active,
+.u-accentColor--fillWhenActive.is-active {
+	border-color: var(--accent_main) !important;
+}
+
+::selection {
+  background-color: var(--accent_highlight) !important;
+  color: var(--color_txt_ee) !important;
+}
+::-moz-selection {
+  background-color: var(--accent_highlight) !important;
+  color: var(--color_txt_ee) !important;
+}
+
+.loadingBar,
+.markup--quote,
+.markup--quote strong,
+.markup--highlight,
+.quoteItem .markup--highlight,
+.u-accentColor--highlightFaint,
+body.is-withMagicUnderlines .markup--quote.is-other,
+body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
+	background: var(--accent_highlight) !important;
+	border-color: var(--accent_highlight) !important;
+	color: var(--accent_highlight_text) !important;
+}
+
+.markup--quote:hover,
+.markup--quote:hover strong {
+	filter: brightness(1.2) !important;
+	-webkit-filter: brightness(1.2) !important;
+}
+
+.drawer-image,
+/* logo links */
+a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
+/* inline image used as a horizontal separator */
+.graf-image[data-height="20"],
+.graf-image[data-height="22"] {
+	filter: invert(90.5%) hue-rotate(180deg) !important;
+}
+
+/* hide white background */
+.creditCardForm-icon,
+.creditCardForm-ccImage {
+	border-radius: 3px !important;
+}

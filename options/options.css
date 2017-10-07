@@ -1,0 +1,108 @@
+:root {
+	/* variables copied from style.css */
+	--color_bkg_0d: #0d0d0d;
+	--color_bkg_11: #111;
+	--color_bkg_1b: #1b1b1b;
+
+	--color_brd_33: #333;
+
+	--color_txt_88: #888;
+	--color_txt_aa: #aaa;
+	--color_txt_cc: #ccc;
+	--color_txt_ee: #eee;
+
+	/* Default accent color settings */
+	--accent_header: #1d1d1d;
+	--accent_highlight: #7aa8d6;
+	--accent_hover: #dddddd;
+	--accent_link: #dddddd;
+	--accent_main: #7aa8d6;
+	--accent_underline: rgba(17, 17, 17, .68);
+}
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+::selection {
+	background-color: #555;
+	color: #fff;
+}
+::-moz-selection {
+	background-color: #555;
+	color: #fff;
+}
+a, input, select, button {
+	outline-color: #555;
+}
+body {
+	margin: 10px;
+	background: var(--color_bkg_0d);
+}
+body * {
+	font-size: 15px;
+}
+section {
+	margin: 10px 0;
+}
+h2, article:first-child > label {
+	margin: 0;
+	font-weight: bold;
+	color: var(--color_txt_ee);
+	padding-left: 0;
+}
+h2, article {
+	padding-left: 5px;
+}
+label {
+	display: block;
+	line-height: 2em;
+	font-size: 16px;
+	margin: 2px 2px 2px 10px;
+	padding: 2px 5px 2px;
+	color: var(--color_txt_cc);
+	cursor: pointer;
+}
+label:hover, article:first-child:hover {
+	background: var(--color_bkg_1b);
+}
+input {
+	background: var(--color_bkg_11);
+	border: 0;
+	float: right;
+	line-height: 1.5em;
+}
+input[type="number"] {
+	width: 50px;
+}
+input[type="checkbox"] {
+	cursor: pointer;
+	zoom: 1.1;
+	margin: 8px 5px 0;
+}
+input[type="color"] {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	padding: 2px;
+}
+#footer {
+	border-top: var(--color_brd_33) 1px solid;
+	padding: 10px 0;
+}
+#reset {
+	background: var(--color_bkg_1b);
+	color: var(--color_txt_cc);
+	border: var(--color_brd_33) 1px solid;
+	float: right;
+	margin-bottom: 10px;
+	box-shadow: none;
+	text-shadow: none;
+	cursor: pointer;
+}
+#reset:hover {
+	filter: brighten(1.1);
+	-webkit-filter: brighten(1.1);
+}

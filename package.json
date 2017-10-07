@@ -1,0 +1,48 @@
+{
+	"name": "darker-medium",
+	"version": "1.1.0",
+	"description": "Read Medium stories with happy eyes",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Mottie/Darker-Medium"
+	},
+	"author": "Rob Garrison",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Mottie/Darker-Medium/issues"
+	},
+	"homepage": "https://github.com/Mottie/Darker-Medium",
+	"scripts": {
+		"test": "xo && stylelint --silent --color -- style.css options/*.css",
+		"build": "node build/build.js"
+	},
+	"devDependencies": {
+		"archiver": "^2.0.3",
+		"stylelint": "^8.2.0",
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"envs": [
+			"browser",
+			"webextensions"
+		],
+		"rules": {
+			"one-var": [
+				"error",
+				"always"
+			],
+			"import/no-unassigned-import": 0,
+			"no-mixed-operators": 0,
+			"no-mixed-requires": 0,
+			"no-negated-condition": 0,
+			"no-unused-vars": 2,
+			"quotes": [
+				"error",
+				"double",
+				{
+					"avoidEscape": true
+				}
+			]
+		}
+	}
+}

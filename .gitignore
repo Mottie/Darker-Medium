@@ -1,0 +1,22 @@
+# lockfiles
+package-lock.json
+yarn.lock
+
+# temp stuff
+tmp/
+*.tmp
+*.bak
+
+# Build
+node_modules/
+
+# Built Web Extension files
+*.xpi
+*.zip
+
+# Windows crap
+Thumbs.db
+Desktop.ini
+
+# Mac crap
+.DS_Store
