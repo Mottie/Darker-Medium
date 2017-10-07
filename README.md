@@ -1,4 +1,4 @@
-#  <img src="icons/icon128.png" width="60px" align="right"> Darker-Medium [![tags][tag-img]][tag-url] [![devDependency Status][david-dev-img]][david-dev-url]
+# <img src="icons/icon128.png" width="60px" align="right"> Darker Medium [![tags][tag-img]][tag-url] [![devDependency Status][david-dev-img]][david-dev-url]
 
 [tag-url]: https://github.com/Mottie/Darker-Medium/tags
 [tag-img]: https://img.shields.io/github/tag/Mottie/Darker-Medium.svg
@@ -43,7 +43,7 @@ For example, I love hackernoon.com, but your bright green header and banners mak
 ## Installation
 
 Install it for:
-* Chrome (pending)
+* [Chrome](https://chrome.google.com/webstore/detail/darker-medium/ffhffkeoooocikeclopcedglnjhoddfj)
 * Firefox (pending)
 * Opera (pending)
 
@@ -96,7 +96,7 @@ And don't worry if you've never contributed to an open-source project before, yo
     * Take a screenshot of the development panel (if you need an app, try http://getgreenshot.org/downloads/).
 * If these instructions aren't clear enough, or you want to contact a person, use Gitter (click the button above) for this repository.
 
-[gitter-url]: https://gitter.im/Mottie/Darker-Medium
+[gitter-url]: https://gitter.im/Darker-Medium
 [gitter-image]: https://img.shields.io/badge/GITTER-join%20chat-yellowgreen.svg
 
 ### Other issues
