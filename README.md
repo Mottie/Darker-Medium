@@ -12,6 +12,7 @@ Read Medium stories with happy eyes!
 ## Contents
 
 * [Features](#features)
+* [Security Concerns](#security-concerns)
 * [Branding](#branding)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -34,9 +35,15 @@ Read Medium stories with happy eyes!
 * The advantage of using this extension over [Stylus](http://add0n.com/stylus.html) or Stylish is that you install it, customize it and forget about it.
 * Please see [this wiki page](https://github.com/Mottie/Darker-Medium/wiki/Tested-pages) for a list of sites that were tested for this extension.
 
+## Security Concerns
+
+This browser extension **does not collect any personal data**.
+
+The only data stored is the user style preferences (the state of the extension, five colors &amp; an underline setting). Absolutely nothing else is shared or tracked; it's not using Google Analytics.
+
 ## Branding
 
-Apologizes to the sites that use specific colors in their branding, this extension overrides all of your colors. It doesn't touch your logo!
+Apologizes to the sites that use specific colors in their branding, this extension overrides all of your colors; and it definitely doesn't touch your logo!
 
 For example, I love hackernoon.com, but your bright green header and banners make my eyes scream when I try to read your site at night. This web extension applies an overall dark theme to all sites including those bright headers.
 
