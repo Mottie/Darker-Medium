@@ -15,7 +15,7 @@ function writeManifest(obj) {
 	return new Promise((resolve, reject) => {
 		fs.writeFile("manifest.json", convertToString(obj), "utf8", err => {
 			if (err) {
-				console.log("Error: ", err);
+				console.log("Error writing manifest.json", err);
 				reject();
 			} else {
 				resolve();
@@ -27,7 +27,8 @@ function writeManifest(obj) {
 function del(name) {
 	return new Promise((resolve, reject) => {
 		fs.unlink(name, err => {
-			if (err) {
+			// ignore if file doesn't exist
+			if (err && err.code !== "ENOENT") {
 				reject();
 			} else {
 				resolve();
@@ -41,7 +42,7 @@ function createZip(name, obj) {
 		archive = archiver("zip"),
 		json = convertToString(obj);
 	return new Promise((resolve, reject) => {
-		archive.on("close", () => {
+		archive.on("finish", () => {
 			resolve();
 		});
 		archive.on("warning", err => {
@@ -68,13 +69,12 @@ function createZip(name, obj) {
 	});
 }
 
+manifest.version = pkg.version;
+
 del("darker-medium.zip")
 	.then(() => del("darker-medium.xpi"))
-	.then(() => {
-		manifest.version = pkg.version;
-		writeManifest(manifest);
-		createZip("darker-medium.zip", manifest);
-	})
+	.then(() => writeManifest(manifest))
+	.then(() => createZip("darker-medium.zip", manifest))
 	.then(() => {
 		// Psuedo sign XPI for local testing
 		manifest.applications = {
@@ -82,10 +82,9 @@ del("darker-medium.zip")
 				id: "darker-medium@example.com"
 			}
 		};
-		createZip("darker-medium.xpi", manifest);
+		return createZip("darker-medium.xpi", manifest);
 	})
-	.then(() => {
-		console.log("\x1b[32m%s\x1b[0m", "Darker-Medium build complete");
-	}, err => {
+	.then(() => console.log("\x1b[32m%s\x1b[0m", "Darker-Medium build complete"))
+	.catch(err => {
 		throw err;
 	});
