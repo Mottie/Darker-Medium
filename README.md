@@ -61,15 +61,15 @@ Install it for:
 
 ### Usercss
 
-Stylus will soon support user.css file formats. Once implemented, the when opening the "raw" version of `darker-medium.user.css` in this repository, the file can be installed and updated automatically with any new changes. For more details, see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss).
+Stylus will soon support user.css file formats. Once implemented, opening the "raw" version of `darker-medium.user.css` in this repository will install the style which will then automatically updated with any new changes. For more details, see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss).
 
 The advantages of a usercss are as follows:
 
-* No intermediary domain to host the usercss file is needed.
-* Updates can be made immediately available.
-* Built-in style customization is available. The customizations available for the extension are also available with the usercss style.
+* No intermediary domain is needed to host the usercss file.
+* Updates will be immediately available.
+* Built-in style customization is built-in. The same customizations for the extension are also available.
 
-[Install](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css)
+  **&rarr; [Install the usercss](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css) &larr;**
 
 ## Usage
 
