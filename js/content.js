@@ -158,16 +158,18 @@
 		// We only need to toggle the link, not the variables style
 		const el = $(THEME),
 			save = mode !== "toggleTab";
-		if (mode.indexOf("toggle") > -1) {
-			mode = el.disabled ? "" : "disable";
-		}
-		el.disabled = mode === "disable";
-		// Don't update storage if only a single tab is being toggled
-		if (save) {
-			getStorage().then(values => {
-				values.enabled = mode !== "disable";
-				setStorage(values);
-			});
+		if (el) {
+			if (mode.indexOf("toggle") > -1) {
+				mode = el.disabled ? "" : "disable";
+			}
+			el.disabled = mode === "disable";
+			// Don't update storage if only a single tab is being toggled
+			if (save) {
+				getStorage().then(values => {
+					values.enabled = mode !== "disable";
+					setStorage(values);
+				});
+			}
 		}
 	}
 
@@ -185,6 +187,7 @@
 	}
 
 	function onStorageChange(changes) {
+		// Throttle storage change
 		clearTimeout(timerStorage);
 		timerStorage = setTimeout(() => {
 			if (changes.enabled) {
