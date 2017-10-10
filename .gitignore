@@ -7,6 +7,10 @@ tmp/
 *.tmp
 *.bak
 
+# logs
+*.stackdump
+*.log
+
 # Build
 node_modules/
 

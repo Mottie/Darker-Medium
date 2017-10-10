@@ -16,17 +16,21 @@
 		// Attribute added to <head> after initialization
 		INIT = "data-" + THEME + "-initialized",
 
-		// Styles (copied from settings.js)
 		SETTINGS = {
 			enabled: true,
 			// Accent colors (comments show defaults)
+			// styles added by build script (modify `build/settings.json`, not here)
 			styles: {
-				header: "#1d1d1d",    // Header (varies)
-				main: "#7AA8D6",      // Main accent
-				highlight: "#7AA8D6", // Highlight
-				link: "#dddddd",      // Link
-				hover: "#dddddd",     // Link hover
-				underline: true       // Link underline
+				/* eslint-disable quote-props */
+				/* BUILD:SETTINGS_START */
+				"header": "#1d1d1d",
+				"main": "#7AA8D6",
+				"highlight": "#7AA8D6",
+				"link": "#dddddd",
+				"hover": "#dddddd",
+				"underline": true
+				/* BUILD:SETTINGS_END */
+				/* eslint-enable quote-props */
 			}
 		},
 		HEX_REGEX = /[^0-9A-F]/gi, // Remove non hex characters

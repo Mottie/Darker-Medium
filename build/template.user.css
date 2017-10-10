@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name         Darker Medium
+@version      / * BUILD:VERSION * /
+@description  Read Medium stories with happy eyes
+@namespace    https://github.com/Mottie
+@author       Rob Garrison <https://github.com/Mottie>
+@homepageURL  https://github.com/Mottie/Darker-Medium
+@supportURL   https://github.com/Mottie/Darker-Medium/issues
+@license      CC-BY-SA-4.0
+@preprocessor stylus
+@var color    acc_header    'Header background' / * BUILD:HEADER * /
+@var color    acc_main      'Main Accent Color' / * BUILD:MAIN * /
+@var color    acc_highlight 'Highlight Color'   / * BUILD:HIGHLIGHT * /
+@var color    acc_link      'Link Color'        / * BUILD:LINK * /
+@var color    acc_hover     'Link Hover Color'  / * BUILD:HOVER * /
+@var checkbox acc_underline 'Link underline'    1
+==/UserStyle== */
+/* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
+:root {
+	--accent_header: acc_header;
+	--accent_main: acc_main;
+	--accent_highlight: acc_highlight;
+	--accent_link: acc_link;
+	--accent_hover: acc_hover;
+
+	--accent_main_text: dark(acc_main) ? white : black;
+	--accent_highlight_text: dark(acc_highlight) ? white : black;
+	--accent_underline: alpha(acc_link, 0.68);
+}
+/* Update the supported Medium stories domains in "medium-sites.json" */
+/* BUILD:USER_CSS */

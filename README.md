@@ -15,6 +15,8 @@ Read Medium stories with happy eyes!
 * [Security Concerns](#security-concerns)
 * [Branding](#branding)
 * [Installation](#installation)
+  * [Extension](#extension)
+  * [Usercss](#usercss)
 * [Usage](#usage)
   * [Toggle the style (temporarily)](#toggle-the-style-temporarily)
   * [Customize accent colors](#customize-accent-colors)
@@ -34,6 +36,7 @@ Read Medium stories with happy eyes!
 * Medium story sites are *automatically* detected and styled.
 * The advantage of using this extension over [Stylus](http://add0n.com/stylus.html) or Stylish is that you install it, customize it and forget about it.
 * Please see [this wiki page](https://github.com/Mottie/Darker-Medium/wiki/Tested-pages) for a list of sites that were tested for this extension.
+* A user.css file is available, and once Stylus has implemented [support for user.css files](https://github.com/openstyles/stylus/pull/134), it will be immediately usable and installable from this repository.
 
 ## Security Concerns
 
@@ -49,10 +52,24 @@ For example, I love hackernoon.com, but your bright green header and banners mak
 
 ## Installation
 
+### Extension
+
 Install it for:
 * [Chrome](https://chrome.google.com/webstore/detail/darker-medium/ffhffkeoooocikeclopcedglnjhoddfj)
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/darker-medium/)
 * Opera (pending)
+
+### Usercss
+
+Stylus will soon support user.css file formats. Once implemented, the when opening the "raw" version of `darker-medium.user.css` in this repository, the file can be installed and updated automatically with any new changes. For more details, see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss).
+
+The advantages of a usercss are as follows:
+
+* No intermediary domain to host the usercss file is needed.
+* Updates can be made immediately available.
+* Built-in style customization is available. The customizations available for the extension are also available with the usercss style.
+
+[Install](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css)
 
 ## Usage
 

@@ -4,12 +4,17 @@
 window.darkerMediumSettings = {
 	enabled: true,
 	// Accent colors (comments show defaults)
+	// DO NOT CHANGE HERE - Edit in build/settings.json
 	styles: {
-		header: "#1d1d1d",    // Header (varies)
-		main: "#7AA8D6",      // Main accent
-		highlight: "#7AA8D6", // Highlight
-		link: "#dddddd",      // Link
-		hover: "#dddddd",     // Link hover
-		underline: true       // Link underline
+		/* eslint-disable quote-props */
+		/* BUILD:SETTINGS_START */
+		"header": "#1d1d1d",
+		"main": "#7AA8D6",
+		"highlight": "#7AA8D6",
+		"link": "#dddddd",
+		"hover": "#dddddd",
+		"underline": true
+		/* BUILD:SETTINGS_END */
+		/* eslint-enable quote-props */
 	}
 };
