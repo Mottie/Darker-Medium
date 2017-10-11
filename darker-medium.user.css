@@ -3,7 +3,7 @@
 @version      1.2.0
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
-@author       Rob Garrison <https://github.com/Mottie>
+@author       Rob Garrison
 @homepageURL  https://github.com/Mottie/Darker-Medium
 @supportURL   https://github.com/Mottie/Darker-Medium/issues
 @license      CC-BY-SA-4.0
@@ -235,6 +235,8 @@ a.link.u-textColorDarker,
 .lockedPostHeader .svgIcon,
 .uiScale-ui--small.ui-heading,
 .uiScale-ui--small .ui-heading,
+.uiScale-ui--smaller.ui-heading,
+.uiScale-ui--smaller .ui-heading,
 .sortableTable-text--visibility,
 .overlay--dark .overlay-content,
 .popover-inner .popover-description,
