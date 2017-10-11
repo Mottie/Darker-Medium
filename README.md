@@ -57,7 +57,7 @@ For example, I love hackernoon.com, but your bright green header and banners mak
 Install it for:
 * [Chrome](https://chrome.google.com/webstore/detail/darker-medium/ffhffkeoooocikeclopcedglnjhoddfj)
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/darker-medium/)
-* Opera (pending)
+* [Opera](https://addons.opera.com/en/extensions/details/darker-medium/)
 
 ### Usercss
 
