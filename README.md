@@ -58,6 +58,7 @@ Install it for:
 * [Chrome](https://chrome.google.com/webstore/detail/darker-medium/ffhffkeoooocikeclopcedglnjhoddfj)
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/darker-medium/)
 * [Opera](https://addons.opera.com/en/extensions/details/darker-medium/)
+* Safari (Help wanted; See [issue #1](https://github.com/Mottie/Darker-Medium/issues/1))
 
 ### Usercss
 
