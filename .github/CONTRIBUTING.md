@@ -26,6 +26,7 @@ For more details, check out this [contributing guide](https://github.com/Roshanj
 
 ## Build & test
 
+* If adding an unsupported domain for the usercss style, please modify the [`build/medium-sites.js` file](https://github.com/Mottie/Darker-Medium/blob/master/build/medium-sites.js).
 * To test this script, make sure to run `npm install` to install the required node modules.
 * Note that at the time of this writing, you will see some warnings while attempting to load the unpacked extension into Chrome:
   * The warnings are related to the [`node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken/issues/411) module.
@@ -33,7 +34,7 @@ For more details, check out this [contributing guide](https://github.com/Roshanj
 * Currently there are no unit tests associated with this web extension, so running `npm test` will only check for linting errors.
 * You can test your changes by loading the extension into your browser
 
-### Webkit (Chrome)
+### Webkit (Chrome & Opera)
 
 * Go to the Menu &gt; More tools &gt; Extensions.
 * Check the "Developer mode" checkbox.

@@ -23,7 +23,7 @@ Read Medium stories with happy eyes!
 * [Contributing](#contributing)
 * [Reporting problems](#reporting-problems)
   * [Style issues](#style-issues)
-  * [Scripting issues](#scripting-issues)
+  * [Other issues](#other-issues)
 
 ## Features
 
@@ -62,13 +62,17 @@ Install it for:
 
 ### Usercss
 
-Stylus will soon support user.css file formats. Once implemented, opening the "raw" version of `darker-medium.user.css` in this repository will install the style which will then automatically updated with any new changes. For more details, see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss).
+[Stylus](http://add0n.com/stylus.html) will soon support user.css file formats. Once implemented, opening the "raw" version of `darker-medium.user.css` in this repository (link below) will install the style which will then automatically updated with any new changes. For more details, see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss).
 
 The advantages of a usercss are as follows:
 
 * No intermediary domain is needed to host the usercss file.
 * Updates will be immediately available.
 * Built-in style customization is built-in. The same customizations for the extension are also available.
+
+The disadvantage of this specific usercss is:
+
+* Medium stories on unlisted domains will not be styled. If you want to report an unstyled Medium domain, please look in the [other issues](#other-issues) section for more details.
 
   **&rarr; [Install the usercss](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css) &larr;**
 
