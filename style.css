@@ -66,12 +66,14 @@ code,
 }
 
 article,
+.footer,
 .site-main,
 .radioInput,
 .screenContent,
 .u-backgroundWhite,
 .drawer-keyboardKey,
 .overlay-dialog--email,
+.jobs-teams__item:after,
 .overlay-dialog--signin,
 .metabar + .u-tintBgColor,
 .u-backgroundGrayLightest,
@@ -132,6 +134,7 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 	color: var(--color_bkg_0d) !important;
 }
 
+.header,
 .u-tintBgColor div,
 .u-backgroundTransparentWhiteDarker {
 	background-color: transparent !important;
@@ -158,6 +161,7 @@ footer .container > div {
 	color: var(--color_txt_88) !important;
 }
 
+.header,
 .button--link,
 .drawer-annotation,
 .u-textColorDarkest,
@@ -308,6 +312,7 @@ h6 {
 .u-borderTopLighter,
 .u-borderTopLightest,
 .u-borderTopColorDarker,
+.jobs-teams__item:after,
 .stats-title--chart,
 .table--bordered tr,
 .streamItem-cardInner,
@@ -539,6 +544,7 @@ body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-o
 }
 
 .drawer-image,
+.header__logo,
 /* logo links */
 a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 /* inline image used as a horizontal separator */
