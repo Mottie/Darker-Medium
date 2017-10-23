@@ -76,6 +76,9 @@ article,
 .jobs-teams__item:after,
 .overlay-dialog--signin,
 .metabar + .u-tintBgColor,
+.u-backgroundBlueGrey,
+.u-backgroundGrayLight,
+.u-backgroundGrayLighter,
 .u-backgroundGrayLightest,
 .u-sm-background--brandSea,
 .u-backgroundColorGrayLight,
@@ -101,11 +104,18 @@ article,
 .popover .popover-inner,
 .popover--dark > .popover-inner,
 .popover--dark > .popover-arrow:after,
+.u-backgroundTransparentBlackDark,
+.u-backgroundTransparentBlackDarker,
+.u-backgroundTransparentBlackLight,
+.u-backgroundTransparentBlackLighter,
 .u-backgroundTransparentBlackLightest,
+.u-backgroundColorTransparentBlackLight,
 input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
 }
 
+.u-backgroundGreenNormal,
+.u-backgroundHighlightStrong,
 .radioInput.is-active:after,
 .radio:checked + .radioInput:after,
 body .button.button--filled,
@@ -136,7 +146,8 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 
 .header,
 .u-tintBgColor div,
-.u-backgroundTransparentWhiteDarker {
+.u-backgroundTransparentWhiteDarker,
+.u-backgroundTransparentWhiteDarkest {
 	background-color: transparent !important;
 }
 
@@ -147,8 +158,12 @@ footer .container > div {
 }
 
 /* fade out content - non-subscription */
-.postFade:before {
+.postFade:before,
+.u-backgroundWhite70FadeTop {
 	background-image: linear-gradient(to bottom, transparent 0, var(--color_bkg_11) 100%) !important;
+}
+.u-backgroundWhite0FadeTop {
+	background-image: linear-gradient(0deg, var(--color_bkg_11) 0, hsla(0, 0%, 0%, .5)) !important;
 }
 
 ::-webkit-input-placeholder {
@@ -192,6 +207,9 @@ h4 a.link,
 .tags .link,
 .chartHelper,
 .popover-inner,
+.uiScale .ui-h1,
+.uiScale .ui-h2,
+.uiScale .ui-h3,
 .heading-prefix,
 .postMetaInline,
 .overlay-content,
@@ -206,13 +224,19 @@ a.link.u-textColorDarker,
 .quoteItem-attribution,
 .markup--mixtapeEmbed-em,
 .lockedPostHeader .svgIcon,
+.uiScale-ui--large .ui-summary,
+.uiScale-ui--small .ui-summary,
+.uiScale-ui--regular .ui-summary,
 .uiScale-ui--small.ui-heading,
 .uiScale-ui--small .ui-heading,
 .uiScale-ui--smaller.ui-heading,
 .uiScale-ui--smaller .ui-heading,
+.uiScale-ui--large .ui-heading,
+.uiScale-ui--regular .ui-heading,
 .sortableTable-text--visibility,
 .overlay--dark .overlay-content,
 .popover-inner .popover-description,
+.uiScale-caption--small .ui-caption,
 .uiScale-caption--regular.ui-caption,
 .uiScale-caption--regular .ui-caption,
 .u-tintSpectrum .u-baseColor--textDark,
@@ -227,6 +251,7 @@ a.link.u-textColorDarker,
 }
 
 strong,
+.avatar-text,
 .heading-title,
 .graf--pullquote,
 .u-textColorDark,
@@ -240,12 +265,20 @@ strong,
 .uiScale-ui--small .ui-body,
 .uiScale-ui--large.ui-body,
 .uiScale-ui--large .ui-body,
+.uiScale-ui--large .ui-tab,
+.uiScale-ui--small .ui-tab,
+.uiScale-ui--regular .ui-tab,
+.uiScale-ui--large .ui-caps,
+.uiScale-ui--small .ui-caps,
+.uiScale-ui--regular .ui-caps,
 .popover-inner .popover-title,
 .chartTabs .is-active .chartTab,
 .uiScale-ui--large.ui-brandTitle,
 .uiScale-ui--large .ui-brandTitle,
 .uiScale-ui--regular.ui-brandTitle,
 .uiScale-ui--regular .ui-brandTitle,
+.uiScale-caption--small .ui-captionStrong,
+.uiScale-caption--regular .ui-captionStrong,
 .u-backgroundTransparentWhiteDarker,
 .u-tintSpectrum .u-baseColor--textDarker,
 .u-tintSpectrum .svgIcon--logoWordmark,
@@ -407,6 +440,10 @@ a.link .u-baseColor--textDark,
 .link--accent:focus,
 .link--accent:hover,
 .link--accent:active,
+.uiScale .ui-linkObvious,
+.uiScale-ui--small .ui-tabActive,
+.uiScale-ui--large .ui-tabActive,
+.uiScale-ui--regular .ui-tabActive,
 .u-accentColor--buttonNormal .icon:before,
 .u-tintSpectrum .u-baseColor--iconLight.svgIcon,
 .u-tintSpectrum .u-baseColor--iconLight .svgIcon,
