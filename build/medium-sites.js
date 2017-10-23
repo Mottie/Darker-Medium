@@ -20,6 +20,7 @@ module.exports = [
 	["domain", "hackernoon.com"],
 	["domain", "journal.thriveglobal.com"],
 	["domain", "medium.com"],
+	["domain", "melmagazine.com"],
 	["domain", "omgfacts.com"],
 	["domain", "rantt.com"],
 	["domain", "shift.newco.co"],
