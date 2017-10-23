@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.2.0
+@version      1.2.1
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -28,7 +28,7 @@
 	--accent_underline: alpha(acc_link, 0.68);
 }
 /* Update the supported Medium stories domains in "medium-sites.json" */
-@-moz-document domain("500ish.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("thinkgrowth.org"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
+@-moz-document domain("500ish.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("thinkgrowth.org"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
 :root {
 	--color_bkg_0d: #0d0d0d;
 	--color_bkg_11: #111;
@@ -97,14 +97,19 @@ code,
 }
 
 article,
+.footer,
 .site-main,
 .radioInput,
 .screenContent,
 .u-backgroundWhite,
 .drawer-keyboardKey,
 .overlay-dialog--email,
+.jobs-teams__item:after,
 .overlay-dialog--signin,
 .metabar + .u-tintBgColor,
+.u-backgroundBlueGrey,
+.u-backgroundGrayLight,
+.u-backgroundGrayLighter,
 .u-backgroundGrayLightest,
 .u-sm-background--brandSea,
 .u-backgroundColorGrayLight,
@@ -130,11 +135,18 @@ article,
 .popover .popover-inner,
 .popover--dark > .popover-inner,
 .popover--dark > .popover-arrow:after,
+.u-backgroundTransparentBlackDark,
+.u-backgroundTransparentBlackDarker,
+.u-backgroundTransparentBlackLight,
+.u-backgroundTransparentBlackLighter,
 .u-backgroundTransparentBlackLightest,
+.u-backgroundColorTransparentBlackLight,
 input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
 }
 
+.u-backgroundGreenNormal,
+.u-backgroundHighlightStrong,
 .radioInput.is-active:after,
 .radio:checked + .radioInput:after,
 body .button.button--filled,
@@ -163,8 +175,10 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 	color: var(--color_bkg_0d) !important;
 }
 
+.header,
 .u-tintBgColor div,
-.u-backgroundTransparentWhiteDarker {
+.u-backgroundTransparentWhiteDarker,
+.u-backgroundTransparentWhiteDarkest {
 	background-color: transparent !important;
 }
 
@@ -175,8 +189,12 @@ footer .container > div {
 }
 
 /* fade out content - non-subscription */
-.postFade:before {
+.postFade:before,
+.u-backgroundWhite70FadeTop {
 	background-image: linear-gradient(to bottom, transparent 0, var(--color_bkg_11) 100%) !important;
+}
+.u-backgroundWhite0FadeTop {
+	background-image: linear-gradient(0deg, var(--color_bkg_11) 0, hsla(0, 0%, 0%, .5)) !important;
 }
 
 ::-webkit-input-placeholder {
@@ -189,6 +207,7 @@ footer .container > div {
 	color: var(--color_txt_88) !important;
 }
 
+.header,
 .button--link,
 .drawer-annotation,
 .u-textColorDarkest,
@@ -219,6 +238,9 @@ h4 a.link,
 .tags .link,
 .chartHelper,
 .popover-inner,
+.uiScale .ui-h1,
+.uiScale .ui-h2,
+.uiScale .ui-h3,
 .heading-prefix,
 .postMetaInline,
 .overlay-content,
@@ -233,13 +255,19 @@ a.link.u-textColorDarker,
 .quoteItem-attribution,
 .markup--mixtapeEmbed-em,
 .lockedPostHeader .svgIcon,
+.uiScale-ui--large .ui-summary,
+.uiScale-ui--small .ui-summary,
+.uiScale-ui--regular .ui-summary,
 .uiScale-ui--small.ui-heading,
 .uiScale-ui--small .ui-heading,
 .uiScale-ui--smaller.ui-heading,
 .uiScale-ui--smaller .ui-heading,
+.uiScale-ui--large .ui-heading,
+.uiScale-ui--regular .ui-heading,
 .sortableTable-text--visibility,
 .overlay--dark .overlay-content,
 .popover-inner .popover-description,
+.uiScale-caption--small .ui-caption,
 .uiScale-caption--regular.ui-caption,
 .uiScale-caption--regular .ui-caption,
 .u-tintSpectrum .u-baseColor--textDark,
@@ -254,6 +282,7 @@ a.link.u-textColorDarker,
 }
 
 strong,
+.avatar-text,
 .heading-title,
 .graf--pullquote,
 .u-textColorDark,
@@ -267,12 +296,20 @@ strong,
 .uiScale-ui--small .ui-body,
 .uiScale-ui--large.ui-body,
 .uiScale-ui--large .ui-body,
+.uiScale-ui--large .ui-tab,
+.uiScale-ui--small .ui-tab,
+.uiScale-ui--regular .ui-tab,
+.uiScale-ui--large .ui-caps,
+.uiScale-ui--small .ui-caps,
+.uiScale-ui--regular .ui-caps,
 .popover-inner .popover-title,
 .chartTabs .is-active .chartTab,
 .uiScale-ui--large.ui-brandTitle,
 .uiScale-ui--large .ui-brandTitle,
 .uiScale-ui--regular.ui-brandTitle,
 .uiScale-ui--regular .ui-brandTitle,
+.uiScale-caption--small .ui-captionStrong,
+.uiScale-caption--regular .ui-captionStrong,
 .u-backgroundTransparentWhiteDarker,
 .u-tintSpectrum .u-baseColor--textDarker,
 .u-tintSpectrum .svgIcon--logoWordmark,
@@ -339,6 +376,7 @@ h6 {
 .u-borderTopLighter,
 .u-borderTopLightest,
 .u-borderTopColorDarker,
+.jobs-teams__item:after,
 .stats-title--chart,
 .table--bordered tr,
 .streamItem-cardInner,
@@ -433,6 +471,10 @@ a.link .u-baseColor--textDark,
 .link--accent:focus,
 .link--accent:hover,
 .link--accent:active,
+.uiScale .ui-linkObvious,
+.uiScale-ui--small .ui-tabActive,
+.uiScale-ui--large .ui-tabActive,
+.uiScale-ui--regular .ui-tabActive,
 .u-accentColor--buttonNormal .icon:before,
 .u-tintSpectrum .u-baseColor--iconLight.svgIcon,
 .u-tintSpectrum .u-baseColor--iconLight .svgIcon,
@@ -570,6 +612,7 @@ body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-o
 }
 
 .drawer-image,
+.header__logo,
 /* logo links */
 a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 /* inline image used as a horizontal separator */
