@@ -42,7 +42,7 @@ Read Medium stories with happy eyes!
 
 This browser extension **does not collect any personal data**.
 
-The only data stored is the user style preferences (the state of the extension, five colors &amp; an underline setting). Absolutely nothing else is shared or tracked; it's not using Google Analytics.
+The only data stored is the user style preferences (the state of the extension, five colors &amp; an underline setting). Absolutely nothing else is shared or tracked; not even Google Analytics.
 
 ## Branding
 
@@ -101,7 +101,7 @@ Open the Extension options (all settings are stored):
 
 ## Contributing
 
-If you would like to contribute to this repository, please refer to the [contribution guidelines](./.github/CONTRIBUTING.md)).
+If you would like to contribute to this repository, please refer to the [contribution guidelines](./.github/CONTRIBUTING.md).
 
 And don't worry if you've never contributed to an open-source project before, you can start by reading [this friendly guide](https://github.com/Roshanjossey/first-contributions#readme).
 
