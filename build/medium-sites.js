@@ -12,6 +12,8 @@
  */
 module.exports = [
 	["domain", "500ish.com"],
+	["domain", "betterhumans.coach.me"],
+	["domain", "blog.figma.com"],
 	["domain", "blog.framer.com"],
 	["domain", "blog.hackster.io"],
 	["domain", "blog.mindorks.com"],
@@ -24,11 +26,11 @@ module.exports = [
 	["domain", "omgfacts.com"],
 	["domain", "rantt.com"],
 	["domain", "shift.newco.co"],
+	["domain", "slack.engineering"],
 	["domain", "thinkgrowth.org"],
 	["domain", "uxdesign.cc"],
 	["domain", "uxplanet.org"],
 	["domain", "writingcooperative.com"],
-	["domain", "blog.figma.com"],
 	/* A very general regular expression looking for a "medium" subdomain
 	 * so far, it captures:
 	 * - https://medium.muz.li
