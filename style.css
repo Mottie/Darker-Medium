@@ -128,11 +128,13 @@ body .button.button--filled,
 .button--primary.button--withChrome.is-active:focus,
 .button--primary.button--withChrome.is-active:hover,
 .button--primary.button--withChrome.is-active:active,
+body .button--withChrome.is-active .button-label.button-activeState,
 body.is-withMagicUnderlines .markup--quote .markup--anchor,
 .js-floatingMultirecommendCount.u-accentColor--backgroundNormal,
 .js-stickyFooter .button--dark.button--activity.is-counter,
 .js-stickyFooter .button--dark.button--primary.button--withChrome.is-active,
-.js-stickyFooter .button--withChrome.is-active .button-label.button-activeState {
+body .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+body .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
 	background-color: var(--accent_main) !important;
 	color: var(--accent_main_text) !important;
 }
@@ -210,6 +212,7 @@ h4 a.link,
 .uiScale .ui-h1,
 .uiScale .ui-h2,
 .uiScale .ui-h3,
+.uiScale .ui-body,
 .heading-prefix,
 .postMetaInline,
 .overlay-content,
@@ -239,13 +242,13 @@ a.link.u-textColorDarker,
 .uiScale-caption--small .ui-caption,
 .uiScale-caption--regular.ui-caption,
 .uiScale-caption--regular .ui-caption,
+.postMetaInline-licenseIcons .svgIcon,
 .u-tintSpectrum .u-baseColor--textDark,
 .u-tintSpectrum .u-baseColor--textNormal,
 .u-resetSpectrum .u-baseColor--buttonDark,
 .catalogPreview--card .catalogPreview-name,
 .u-tintSpectrum .u-baseColor--link.link--darker,
-.js-carouselInner section .u-baseColor--textDarker,
-.button--withChrome.is-active .button-label.button-activeState {
+.js-carouselInner section .u-baseColor--textDarker {
 	color: var(--color_txt_aa) !important;
 	fill: var(--color_txt_aa) !important;
 }
@@ -256,6 +259,8 @@ strong,
 .graf--pullquote,
 .u-textColorDark,
 .u-textColorWhite,
+.uiScale .ui-brand1,
+.uiScale .ui-brand2,
 .uiScale.ui-pageTitle,
 .uiScale .ui-pageTitle,
 .u-baseColor--buttonDark,
@@ -548,17 +553,19 @@ body.is-withMagicUnderlines .markup--anchor {
 
 .u-accentColor--buttonDark.button--filled,
 .u-accentColor--buttonDark.button--withChrome.is-active,
-.u-accentColor--fillWhenActive.is-active {
+.u-accentColor--fillWhenActive.is-active,
+.u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+.u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
 	border-color: var(--accent_main) !important;
 }
 
 ::selection {
-  background-color: var(--accent_highlight) !important;
-  color: var(--color_txt_ee) !important;
+	background-color: var(--accent_highlight) !important;
+	color: var(--color_txt_ee) !important;
 }
 ::-moz-selection {
-  background-color: var(--accent_highlight) !important;
-  color: var(--color_txt_ee) !important;
+	background-color: var(--accent_highlight) !important;
+	color: var(--color_txt_ee) !important;
 }
 
 .loadingBar,
@@ -594,4 +601,24 @@ a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 .creditCardForm-icon,
 .creditCardForm-ccImage {
 	border-radius: 3px !important;
+}
+
+/* animations */
+@keyframes black-pulse-09 {
+	0% { transform:scale(1); fill: var(--color_txt_aa) !important; }
+	15% { transform:scale(.9) !important; }
+	100% { transform:scale(1); fill: var(--color_txt_aa) !important; }
+}
+
+@keyframes pulse-shadow {
+	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
+	70% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
+}
+
+@keyframes pulse-shadow--onboarding {
+	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
+	30% { box-shadow:0 0 0 0 var(--accent_main) !important; }
+	80% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
 }
