@@ -28,7 +28,7 @@
 	--accent_underline: alpha(acc_link, 0.68);
 }
 /* Update the supported Medium stories domains in "medium-sites.json" */
-@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thinkgrowth.org"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
+@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thinkgrowth.org"), domain("towardsdatascience.com"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
 :root {
 	--color_bkg_0d: #0d0d0d;
 	--color_bkg_11: #111;
@@ -290,6 +290,10 @@ strong,
 .graf--pullquote,
 .u-textColorDark,
 .u-textColorWhite,
+.uiScale .ui-h1,
+.uiScale .ui-h2,
+.uiScale .ui-h3,
+.uiScale .ui-h4,
 .uiScale .ui-brand1,
 .uiScale .ui-brand2,
 .uiScale.ui-pageTitle,
