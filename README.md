@@ -64,17 +64,17 @@ Install it for:
 
 [Stylus](http://add0n.com/stylus.html) supports user.css file formats. When a "raw" version of `darker-medium.user.css` from this repository (link below) is opened in the browser, Stylus will prompt you to install the style. For more details, see the [usercss documentation](https://github.com/openstyles/stylus/wiki/Usercss).
 
-The advantages of using a usercss are as follows:
+The **advantages** of using a usercss are as follows:
 
 * No intermediary domain is needed to host the usercss file.
 * Updates will be immediately available.
 * Style customization is built-in. The same customizations for the extension are also available.
 
-The disadvantage of this specific usercss is:
+The **disadvantage** of this specific usercss is:
 
 * Medium stories on unlisted domains will not be styled. If you want to report an unstyled Medium domain, please look in the [other issues](#other-issues) section for more details. A list of currently supported sites can be found in the [`medium-sites.js` file](./build/medium-sites.js).
 
-  **&rarr; [Install the usercss](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css) &larr;**
+  [![Install the usercss](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css)
 
 ## Usage
 
