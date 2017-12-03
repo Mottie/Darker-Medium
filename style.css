@@ -609,20 +609,20 @@ a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 
 /* animations */
 @keyframes black-pulse-09 {
-	0% { transform:scale(1); fill: var(--color_txt_aa) !important; }
-	15% { transform:scale(.9) !important; }
-	100% { transform:scale(1); fill: var(--color_txt_aa) !important; }
+	0% { transform: scale(1); fill: var(--color_txt_aa) !important; }
+	15% { transform: scale(.9) !important; }
+	100% { transform: scale(1); fill: var(--color_txt_aa) !important; }
 }
 
 @keyframes pulse-shadow {
-	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	70% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
-	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
+	0% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	70% { box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important; }
 }
 
 @keyframes pulse-shadow--onboarding {
-	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	30% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	80% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
-	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
+	0% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	30% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	80% { box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important; }
 }
