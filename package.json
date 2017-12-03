@@ -17,8 +17,8 @@
 		"build": "node build/build.js"
 	},
 	"devDependencies": {
-		"archiver": "^2.0.3",
-		"stylelint": "^8.2.0",
+		"archiver": "^2.1.0",
+		"stylelint": "^8.3.1",
 		"xo": "^0.18.2"
 	},
 	"xo": {
@@ -42,7 +42,8 @@
 				{
 					"avoidEscape": true
 				}
-			]
+			],
+			"space-before-function-paren": 0
 		}
 	}
 }
