@@ -9,7 +9,7 @@ function buildMozDoc() {
 	sites.forEach(fxn => {
 		list.push(`${fxn[0]}("${fxn[1]}")`);
 	});
-	return "@-moz-document " + list.join(", ");
+	return `@-moz-document ${list.join(", ")} {\n`;
 }
 
 function replaceVar(str, name, replacement) {
@@ -18,7 +18,7 @@ function replaceVar(str, name, replacement) {
 }
 
 // Parameter files > [ style.css, template.user.css ]
-module.exports = function (files, version) {
+module.exports = function(files, version) {
 	// / * BUILD:VERSION * /
 	// @var color    acc_header    'Header background' / * BUILD:HEADER * /
 	// @var color    acc_main      'Main Accent Color' / * BUILD:MAIN * /
@@ -32,9 +32,6 @@ module.exports = function (files, version) {
 	Object.keys(settings).forEach(key => {
 		usercss = replaceVar(usercss, key, settings[key]);
 	});
-	return replaceVar(
-		usercss,
-		"user_css",
-		buildMozDoc() + ` {\n${files[0]}\n}`
-	);
+	usercss = replaceVar(usercss, "mozdoc", buildMozDoc());
+	return replaceVar(usercss, "user_css", `${files[0]}\n}`);
 };

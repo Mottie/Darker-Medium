@@ -16,6 +16,8 @@
 @var checkbox acc_underline 'Link underline'    1
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
+/* Update the supported Medium stories domains in "medium-sites.json" */
+/* BUILD:MOZDOC */
 :root {
 	--accent_header: acc_header;
 	--accent_main: acc_main;
@@ -27,5 +29,4 @@
 	--accent_highlight_text: dark(acc_highlight) ? white : black;
 	--accent_underline: alpha(acc_link, 0.68);
 }
-/* Update the supported Medium stories domains in "medium-sites.json" */
 /* BUILD:USER_CSS */
