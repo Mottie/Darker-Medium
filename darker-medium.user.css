@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.2.2
+@version      1.2.3
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -16,6 +16,9 @@
 @var checkbox acc_underline 'Link underline'    1
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
+/* Update the supported Medium stories domains in "medium-sites.json" */
+@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("mystudentvoices.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thinkgrowth.org"), domain("towardsdatascience.com"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
+
 :root {
 	--accent_header: acc_header;
 	--accent_main: acc_main;
@@ -27,8 +30,6 @@
 	--accent_highlight_text: dark(acc_highlight) ? white : black;
 	--accent_underline: alpha(acc_link, 0.68);
 }
-/* Update the supported Medium stories domains in "medium-sites.json" */
-@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.mindorks.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("omgfacts.com"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thinkgrowth.org"), domain("towardsdatascience.com"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
 :root {
 	--color_bkg_0d: #0d0d0d;
 	--color_bkg_11: #111;
@@ -640,22 +641,22 @@ a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 
 /* animations */
 @keyframes black-pulse-09 {
-	0% { transform:scale(1); fill: var(--color_txt_aa) !important; }
-	15% { transform:scale(.9) !important; }
-	100% { transform:scale(1); fill: var(--color_txt_aa) !important; }
+	0% { transform: scale(1); fill: var(--color_txt_aa) !important; }
+	15% { transform: scale(.9) !important; }
+	100% { transform: scale(1); fill: var(--color_txt_aa) !important; }
 }
 
 @keyframes pulse-shadow {
-	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	70% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
-	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
+	0% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	70% { box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important; }
 }
 
 @keyframes pulse-shadow--onboarding {
-	0% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	30% { box-shadow:0 0 0 0 var(--accent_main) !important; }
-	80% { box-shadow:0 0 5px 10px rgba(255, 255, 255, 0) !important; }
-	100% { box-shadow:0 0 0 0 rgba(255, 255, 255, 0) !important; }
+	0% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	30% { box-shadow: 0 0 0 0 var(--accent_main) !important; }
+	80% { box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0) !important; }
+	100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important; }
 }
 
 }
