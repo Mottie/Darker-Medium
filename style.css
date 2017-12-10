@@ -109,7 +109,10 @@ article,
 .u-backgroundTransparentBlackLight,
 .u-backgroundTransparentBlackLighter,
 .u-backgroundTransparentBlackLightest,
-.u-backgroundColorTransparentBlackLight,
+.u-backgroundColorTransparentBlackLight {
+	background: var(--color_bkg_1b) !important;
+}
+
 input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
 }
