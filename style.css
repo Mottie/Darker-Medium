@@ -153,7 +153,10 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 	background-color: transparent !important;
 }
 
-div.popover,
+div.popover {
+	background: #1D1D1D !important;
+}
+
 .readNextPromo,
 footer .container > div {
 	background: transparent none !important;
