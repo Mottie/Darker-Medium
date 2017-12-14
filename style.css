@@ -151,6 +151,7 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 
 .header,
 .u-tintBgColor div,
+.markup--quote code,
 .u-backgroundTransparentWhiteDarker,
 .u-backgroundTransparentWhiteDarkest {
 	background-color: transparent !important;
