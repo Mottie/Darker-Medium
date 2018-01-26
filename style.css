@@ -152,6 +152,7 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 .header,
 .u-tintBgColor div,
 .markup--quote code,
+.markup--quote strong,
 .u-backgroundTransparentWhiteDarker,
 .u-backgroundTransparentWhiteDarkest {
 	background-color: transparent !important;
@@ -589,8 +590,7 @@ body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-o
 	color: var(--accent_highlight_text) !important;
 }
 
-.markup--quote:hover,
-.markup--quote:hover strong {
+.markup--quote:hover {
 	filter: brightness(1.2) !important;
 	-webkit-filter: brightness(1.2) !important;
 }
