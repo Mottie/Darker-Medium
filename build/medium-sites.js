@@ -16,7 +16,6 @@ module.exports = [
 	["domain", "blog.figma.com"],
 	["domain", "blog.framer.com"],
 	["domain", "blog.hackster.io"],
-	["domain", "blog.mindorks.com"],
 	["domain", "blog.neufund.org"],
 	["domain", "blog.timescale.com"],
 	["domain", "codeburst.io"],
