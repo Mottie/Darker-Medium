@@ -12,6 +12,10 @@
 	--color_txt_ee: #eee;
 }
 
+.js-stickyFooter {
+	display: var(--footer_state) !important;
+}
+
 .metabar,
 .postActions,
 .cardChromeless,
