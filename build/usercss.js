@@ -5,15 +5,12 @@ const sites = require("./medium-sites"),
 	settings = require("./settings.json");
 
 function buildMozDoc() {
-	const list = [];
-	sites.forEach(fxn => {
-		list.push(`${fxn[0]}("${fxn[1]}")`);
-	});
+	const list = sites.map(fxn => `${fxn[0]}("${fxn[1]}")`);
 	return `@-moz-document ${list.join(", ")} {\n`;
 }
 
 function replaceVar(str, name, replacement) {
-	const regex = new RegExp(`\\/\\s*\\*\\s*BUILD:\\s*${name}\\s*\\*\\s*\\/`, "gi");
+	const regex = new RegExp(`\\/\\s*\\*\\s*BUILD:${name}\\s*\\*\\s*\\/`, "gi");
 	return str.replace(regex, replacement);
 }
 
