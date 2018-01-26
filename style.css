@@ -12,8 +12,6 @@
 	--color_txt_ee: #eee;
 }
 
-html,
-body,
 .metabar,
 .postActions,
 .cardChromeless,
@@ -65,10 +63,13 @@ code,
 	background-color: var(--color_bkg_0d) !important;
 }
 
+html,
+body,
 article,
 .footer,
 .site-main,
 .radioInput,
+.EmbeddedTweet,
 .screenContent,
 .u-backgroundWhite,
 .drawer-keyboardKey,
@@ -96,7 +97,8 @@ article,
 .u-background--brandSand,
 .u-background--brandSea,
 .u-background--brandSky,
-.streamItemConversationItem--summary {
+.streamItemConversationItem--summary,
+.TwitterCard-container--clickable:hover {
 	background-color: var(--color_bkg_1b) !important;
 }
 
@@ -321,6 +323,7 @@ h6 {
 .button,
 .list-item,
 .chartTabs li,
+.EmbeddedTweet,
 .cardChromeless,
 .lockedPostHeader,
 .graf--blockquote,
@@ -370,6 +373,7 @@ h6 {
 .u-accentColor--borderDark,
 .chartPage-verticalDivider,
 .streamItemConversation-divider,
+.TwitterCard-container--clickable,
 .js-carouselInner section .u-borderBox,
 .table-thead--borderLeftBleed650:before,
 .u-resetSpectrum .u-baseColor--buttonDark,
