@@ -22,6 +22,8 @@ module.exports = function(files, version) {
 	// @var color    acc_highlight 'Highlight Color'   / * BUILD:HIGHLIGHT * /
 	// @var color    acc_link      'Link Color'        / * BUILD:LINK * /
 	// @var color    acc_hover     'Link Hover Color'  / * BUILD:HOVER * /
+	// @var checkbox acc_underline "Link underline"    / * BUILD:UNDERLINE * /
+	// @var checkbox hide_footer   "Hide Footer"       / * BUILD:FOOTER * /
 	// /* BUILD:USER_CSS */
 	let usercss = files[1];
 

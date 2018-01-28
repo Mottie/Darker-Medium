@@ -88,7 +88,7 @@ input[type="color"] {
 	cursor: pointer;
 	padding: 2px;
 }
-#footer {
+#doc-footer {
 	border-top: var(--color_brd_33) 1px solid;
 	padding: 10px 0;
 }

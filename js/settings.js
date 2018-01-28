@@ -13,7 +13,8 @@ window.darkerMediumSettings = {
 		"highlight": "#7AA8D6",
 		"link": "#dddddd",
 		"hover": "#dddddd",
-		"underline": true
+		"underline": 1,
+		"footer": 0
 		/* BUILD:SETTINGS_END */
 		/* eslint-enable quote-props */
 	}

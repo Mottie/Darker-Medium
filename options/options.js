@@ -9,7 +9,7 @@
 	function getStyles() {
 		const styles = {};
 		Object.keys(darkerMediumSettings.styles).forEach(name => {
-			if (name === "underline") {
+			if (name === "underline" || name === "footer") {
 				styles[name] = $(name).checked;
 			} else {
 				styles[name] = $(name).value || darkerMediumSettings.styles[name];
@@ -22,7 +22,7 @@
 		if (styles && Object.keys(styles).length > 0) {
 			busy = true;
 			Object.keys(darkerMediumSettings.styles).forEach(name => {
-				if (name === "underline") {
+				if (name === "underline" || name === "footer") {
 					$(name).checked = styles[name];
 				} else {
 					$(name).value = styles[name] || darkerMediumSettings.styles[name];

@@ -28,7 +28,8 @@
 				"highlight": "#7AA8D6",
 				"link": "#dddddd",
 				"hover": "#dddddd",
-				"underline": true
+				"underline": 1,
+				"footer": 0
 				/* BUILD:SETTINGS_END */
 				/* eslint-enable quote-props */
 			}
@@ -81,8 +82,10 @@
 		let accents = "\n";
 		Object.keys(SETTINGS.styles).forEach(name => {
 			let style = styles[name];
-
-			if (name === "underline") {
+			if (name === "footer") {
+				accents += `  --hide_footer: ${style ? "none" : "block"};`;
+				return;
+			} else if (name === "underline") {
 				// If underline is disabled, set the alpha channel to zero to make it
 				// transparent
 				const alpha = style === true ? ALPHA : 0;

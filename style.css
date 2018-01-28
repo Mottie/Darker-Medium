@@ -13,7 +13,7 @@
 }
 
 .js-stickyFooter {
-	display: var(--footer_state) !important;
+	display: var(--hide_footer) !important;
 }
 
 .metabar,
