@@ -28,6 +28,7 @@ module.exports = [
 	["domain", "rantt.com"],
 	["domain", "shift.newco.co"],
 	["domain", "slack.engineering"],
+	["domain", "thelily.com"],
 	["domain", "thinkgrowth.org"],
 	["domain", "towardsdatascience.com"],
 	["domain", "uxdesign.cc"],
