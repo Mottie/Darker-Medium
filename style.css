@@ -143,14 +143,17 @@ body.is-withMagicUnderlines .markup--quote .markup--anchor,
 .js-stickyFooter .button--dark.button--activity.is-counter,
 .js-stickyFooter .button--dark.button--primary.button--withChrome.is-active,
 body .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
-body .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
+body .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) .svgIcon,
+body .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill),
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
 	background-color: var(--accent_main) !important;
 	color: var(--accent_main_text) !important;
 }
 
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span,
-body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill):not(.button--follow) {
 	background-color: var(--accent_link) !important;
 	color: var(--color_bkg_0d) !important;
 }
@@ -382,11 +385,14 @@ h6 {
 .table-thead--borderLeftBleed650:before,
 .u-resetSpectrum .u-baseColor--buttonDark,
 .u-tintSpectrum .u-baseColor--borderLight,
+.u-tintSpectrum a.u-baseColor--buttonNormal,
 .catalogPreview--card .catalogPreview-header,
 .heading--borderedTop .heading-tabsItem.is-active,
 .heading--borderedBottom .heading-tabsItem.is-active,
 .streamItemConversationItem--preview:not(:first-child),
-.responsesStream-showOtherResponses.cardChromeless:hover {
+.responsesStream-showOtherResponses.cardChromeless:hover,
+.u-tintSpectrum:not(.metabar) .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
+.u-tintSpectrum:not(.metabar) .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
 	border-color: var(--color_brd_33) !important;
 }
 
