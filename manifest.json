@@ -37,7 +37,8 @@
 		]
 	},
 	"web_accessible_resources": [
-		"style.css"
+		"style.css",
+		"gist.css"
 	],
 	"commands": {
 		"disable-darker-medium": {

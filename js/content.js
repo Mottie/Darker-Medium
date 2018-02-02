@@ -48,8 +48,9 @@
 
 	function checkPage(mode) {
 		clearTimeout(timerCheck);
+		const head = document.head;
 		// `document.head` may not be available at document-start
-		if (!document.head) {
+		if (!head) {
 			timerCheck = setTimeout(() => {
 				checkPage(mode);
 			}, 10);
@@ -57,9 +58,11 @@
 		}
 		// Medium posts have a <head> that looks something like this:
 		// <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# medium-com: http://ogp.me/ns/fb/medium-com#">
-		if (IS_MEDIUM.test(document.head.getAttribute("prefix"))) {
-			const hasInitialized = document.head.getAttribute(INIT) === "true";
-			document.head.setAttribute(INIT, true);
+		if (IS_MEDIUM.test(head.getAttribute("prefix"))) {
+			const hasInitialized = head.getAttribute(INIT) === "true";
+			// Add attribute to HTML for iframe to check parent
+			document.documentElement.setAttribute(THEME, true);
+			head.setAttribute(INIT, true);
 			getStorage().then(values => {
 				const isEnabled = values.enabled ? "enable" : "disable";
 				if (
@@ -75,6 +78,8 @@
 				// variable definitions
 				addVars(values.styles);
 			});
+		} else if (isMediumIframe()) {
+			insertInIframe();
 		}
 	}
 
@@ -124,6 +129,59 @@
 		return yiq >= 128 ? "black" : "white";
 	}
 
+	function isMediumIframe() {
+		try {
+			if (
+				window !== parent &&
+				// look for Darker Medium theme attribute
+				parent.document.documentElement.getAttribute(THEME)
+			) {
+				return true;
+			}
+		} catch (e) {}
+		return false;
+	}
+
+	function iframeLoaded() {
+		let timer,
+			counter = 0;
+		return new Promise((resolve, reject) => {
+			const checkComplete = () => {
+				counter++;
+				clearTimeout(timer);
+				timer = setTimeout(() => {
+					if (counter > 100) {
+						reject();
+					}
+					if (document.readyState !== "complete") {
+						return checkComplete();
+					}
+					resolve();
+				}, 100);
+			};
+			checkComplete();
+		});
+	}
+
+	function insertInIframe() {
+		iframeLoaded().then(() => {
+			if (document.querySelector("script[src*='gist']")) {
+				getStorage().then(values => {
+					const link = createStyle({
+						link: document.createElement("link"),
+						id: THEME + "-gist",
+						mode: values.enabled ? "enable" : "disable",
+						style: "gist.css"
+					});
+					addToDOM(link);
+				});
+			}
+		})
+		.catch(() => {
+			console.log("Unable to process iframe");
+		});
+	}
+
 	function addVars(styles) {
 		let el = $(VARS);
 		if (!el) {
@@ -134,13 +192,22 @@
 		el.textContent = `:root { ${processStyles(styles)} }`;
 	}
 
+	function createStyle({link, id, style, mode}) {
+		link.id = id;
+		link.disabled = mode === "disable";
+		link.rel = "stylesheet";
+		link.href = chrome.extension.getURL(style);
+		return link;
+	}
+
 	function addStylesheet(mode) {
 		const el = $(THEME),
-			$link = el ? el : document.createElement("link");
-		$link.id = THEME;
-		$link.disabled = mode === "disable";
-		$link.rel = "stylesheet";
-		$link.href = chrome.extension.getURL("style.css");
+			$link = createStyle({
+				link: el ? el : document.createElement("link"),
+				id: THEME,
+				mode,
+				style: "style.css"
+			});
 		// Add to DOM (after </head>)
 		addToDOM($link);
 		if (document.readyState !== "loading") {
@@ -156,18 +223,17 @@
 		}
 	}
 
-	// Mode is "enable", "disable" or undefined (toggles)
+	// Mode is "enable", "disable", "toggleAll" or "toggleTab"
 	function toggleStylesheet(mode) {
-		// We only need to toggle the link, not the variables style
-		const el = $(THEME),
-			save = mode !== "toggleTab";
+		// Toggle the link, not the variables style
+		const el = $(THEME);
 		if (el) {
 			if (mode.indexOf("toggle") > -1) {
 				mode = el.disabled ? "" : "disable";
 			}
 			el.disabled = mode === "disable";
 			// Don't update storage if only a single tab is being toggled
-			if (save) {
+			if (mode !== "toggleTab") {
 				getStorage().then(values => {
 					values.enabled = mode !== "disable";
 					setStorage(values);
@@ -177,14 +243,15 @@
 	}
 
 	function addToDOM(el) {
+		const doc = el.ownerDocument;
 		// Don't add to DOM if already attached;
 		// Ensure that variables are *always* defined before the style
 		if (!el.parentNode || el.id === VARS) {
 			// Add after </head> tag
-			document.head.parentNode.insertBefore(el, document.head.nextSibling);
-		} else if (document.body && !el.getAttribute(MOVED)) {
+			doc.head.parentNode.insertBefore(el, doc.head.nextSibling);
+		} else if (doc.body && !el.getAttribute(MOVED)) {
 			// Called on window load, move style after </body> tag
-			document.body.parentNode.insertBefore(el, document.body.nextSibling);
+			doc.body.parentNode.insertBefore(el, doc.body.nextSibling);
 			el.setAttribute(MOVED, "true");
 		}
 	}

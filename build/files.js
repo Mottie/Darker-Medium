@@ -75,9 +75,12 @@ function updateSettings(name, tabs) {
 
 // Build darker-medium.user.css from template and style.css
 function buildUserCSS(version) {
-	return Promise.all(
-			["./style.css", "./build/template.user.css"].map(name => readFile(name))
-		)
+	const files = [
+		"./style.css",
+		"./gist.css",
+		"./build/template.user.css" // must be last in this list
+	];
+	return Promise.all(files.map(name => readFile(name)))
 		.then(files => writeFile(
 			"darker-medium.user.css", processTemplate(files, version))
 		);
@@ -108,6 +111,7 @@ function createZip(name, obj) {
 		archive.glob("js/*");
 		archive.glob("options/*");
 		archive.glob("style.css");
+		archive.glob("gist.css");
 		archive.append(json, {
 			name: "manifest.json"
 		});

@@ -25,12 +25,21 @@ module.exports = function(files, version) {
 	// @var checkbox acc_underline "Link underline"    / * BUILD:UNDERLINE * /
 	// @var checkbox hide_footer   "Hide Footer"       / * BUILD:FOOTER * /
 	// /* BUILD:USER_CSS */
-	let usercss = files[1];
+	let usercss = files.pop();
 
 	usercss = replaceVar(usercss, "version", version);
 	Object.keys(settings).forEach(key => {
 		usercss = replaceVar(usercss, key, settings[key]);
 	});
 	usercss = replaceVar(usercss, "mozdoc", buildMozDoc());
-	return replaceVar(usercss, "user_css", `${files[0]}\n}`);
+	// Remove :root{} from gist.css; otherwise, it'll be duplicated in the
+	// usercss, and is needed in the gist style injected by the extension into
+	// the iframe
+	files.forEach((file, index) => {
+		const indx = file.indexOf("/* Gist Syntax");
+		if (indx > -1) {
+			files[index] = file.substring(indx, file.length);
+		}
+	});
+	return replaceVar(usercss, "user_css", `${files.join("\n")}\n}`);
 };
