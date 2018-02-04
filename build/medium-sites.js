@@ -25,6 +25,7 @@ module.exports = [
 	["domain", "melmagazine.com"],
 	["domain", "mystudentvoices.com"],
 	["domain", "netbasal.com"],
+	["domain", "ofdollarsanddata.com"],
 	["domain", "omgfacts.com"],
 	["domain", "praxis.fortelabs.co"],
 	["domain", "rantt.com"],
