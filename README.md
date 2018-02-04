@@ -33,6 +33,8 @@ Read Medium stories with happy eyes!
   * Main Accent color.
   * Highlighting color.
   * Link color, hover and underline.
+  * Hiding the "get updates" footer.
+* Adds syntax highlighting to code and styles embedded [gists](https://gist.github.com/).
 * Medium story sites are *automatically* detected and styled.
 * The advantage of using this extension over [Stylus](http://add0n.com/stylus.html) or Stylish is that you install it, customize it and forget about it.
 * Please see [this wiki page](https://github.com/Mottie/Darker-Medium/wiki/Tested-pages) for a list of sites that were tested for this extension.
