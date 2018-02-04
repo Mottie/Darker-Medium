@@ -413,7 +413,7 @@ h6 {
 	background-color: var(--color_brd_33) !important;
 }
 
-.u-accentColor--buttonNormal:hover {
+body .u-accentColor--buttonNormal:hover {
 	border-color: var(--color_hover) !important;
 }
 
@@ -485,6 +485,7 @@ a.link .u-baseColor--textDark,
 .u-tintSpectrum .u-baseColor--buttonNormal,
 .u-tintSpectrum .u-accentColor--buttonDark,
 .u-tintSpectrum .u-accentColor--buttonNormal:not(.clapButton--largePill),
+body .u-accentColor--buttonNormal:not(.clapButton--largePill),
 .button .svgIcon:not(.svgIcon--clap):not(.svgIcon--clapFilled),
 .suggestionSidebar .button.is-active:not(.button--withIcon) .button-activeState,
 .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
@@ -540,11 +541,11 @@ body.is-withMagicUnderlines .markup--anchor {
 .u-textColor--brandSand,
 .u-textColorGreenNormal,
 .u-accentColor--textDark,
-.u-accentColor--textNormal,
+body .u-accentColor--textNormal,
 .u-accentColor--borderNormal,
 .u-accentColor--iconNormal.svgIcon,
 .u-accentColor--iconNormal .svgIcon,
-.u-accentColor--buttonNormal .svgIcon,
+body .u-accentColor--buttonNormal .svgIcon,
 .u-baseColor--iconNormal.avatar-halo,
 .u-tintSpectrum .svgIcon--logoMonogram,
 .u-tintSpectrum .svgIcon--logoMonogram svg,
@@ -568,8 +569,8 @@ body.is-withMagicUnderlines .markup--anchor {
 .tags--postTags > .button:hover,
 .tags--postTags .tag-button:hover,
 .u-accentColor--borderNormal,
-.postArticle.is-withAccentColors .markup--user,
-.postArticle.is-withAccentColors .markup--query,
+body .postArticle.is-withAccentColors .markup--user,
+body .postArticle.is-withAccentColors .markup--query,
 .u-accentColor--buttonNormal:not(.clapButton--largePill) {
 	color: var(--accent_main) !important;
 	border-color: var(--accent_main) !important;
@@ -599,7 +600,7 @@ body.is-withMagicUnderlines .markup--anchor {
 .quoteItem .markup--highlight,
 .u-accentColor--highlightFaint,
 body.is-withMagicUnderlines .markup--quote.is-other,
-body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
+html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
 	background: var(--accent_highlight) !important;
 	border-color: var(--accent_highlight) !important;
 	color: var(--accent_highlight_text) !important;
