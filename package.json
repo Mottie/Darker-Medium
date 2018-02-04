@@ -14,13 +14,17 @@
 	"homepage": "https://github.com/Mottie/Darker-Medium",
 	"scripts": {
 		"test": "xo && stylelint --silent --color -- style.css gist.css options/*.css",
+		"update": "updates -u && npm update",
 		"build": "node build/build.js"
 	},
 	"devDependencies": {
 		"archiver": "^2.1.1",
+		"code-prettify": "^0.1.0",
 		"stylelint": "^8.4.0",
+		"updates": "^2.2.1",
 		"xo": "^0.18.2"
 	},
+	"eslintIgnore": ["js/run_prettify.js"],
 	"xo": {
 		"envs": [
 			"browser",
@@ -43,7 +47,8 @@
 					"avoidEscape": true
 				}
 			],
-			"space-before-function-paren": 0
+			"space-before-function-paren": 0,
+			"unicorn/no-abusive-eslint-disable": 0
 		}
 	}
 }

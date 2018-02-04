@@ -73,12 +73,24 @@ function updateSettings(name, tabs) {
 		.then(file => writeFile(name, file));
 }
 
+function copyPrettify() {
+	readFile("node_modules/code-prettify/loader/run_prettify.js")
+		.then(code => {
+			// Don't load external CSS; remove `F.push("https://...prettify.css")`
+			code = "/* eslint-disable */\n" + code.replace(
+				/\w+\.push\(['"]https:\/\/cdn\.rawgit\.com[\w-/]+prettify\.css['"]\);/,
+				""
+			);
+			writeFile("./js/run_prettify.js", code);
+		});
+}
+
 // Build darker-medium.user.css from template and style.css
 function buildUserCSS(version) {
 	const files = [
 		"./style.css",
 		"./gist.css",
-		"./build/template.user.css" // must be last in this list
+		"./build/template.user.css" // Must be last in this list
 	];
 	return Promise.all(files.map(name => readFile(name)))
 		.then(files => writeFile(
@@ -122,6 +134,7 @@ function createZip(name, obj) {
 module.exports = {
 	del,
 	updateSettings,
+	copyPrettify,
 	buildUserCSS,
 	writeFile,
 	convertToString,

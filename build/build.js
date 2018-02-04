@@ -7,6 +7,7 @@ const pkg = require("../package.json"),
 	{
 		del,
 		updateSettings,
+		copyPrettify,
 		buildUserCSS,
 		writeFile,
 		convertToString,
@@ -20,6 +21,7 @@ del("darker-medium.zip")
 	.then(() => del("darker-medium.user.css"))
 	.then(() => updateSettings("js/settings.js", 2))
 	.then(() => updateSettings("js/content.js", 4))
+	.then(() => copyPrettify())
 	.then(() => buildUserCSS(pkg.version))
 	.then(() => writeFile("manifest.json", convertToString(manifest)))
 	.then(() => createZip("darker-medium.zip", manifest))

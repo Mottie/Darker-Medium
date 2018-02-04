@@ -16,6 +16,9 @@
 		// Attribute added to <head> after initialization
 		INIT = "data-" + THEME + "-initialized",
 
+		PRETTYPRINT = ".section-content pre:not(.prettyprint)",
+		MUTATION_DEBOUNCE = 500,
+
 		SETTINGS = {
 			enabled: true,
 			// Accent colors (comments show defaults)
@@ -48,9 +51,8 @@
 
 	function checkPage(mode) {
 		clearTimeout(timerCheck);
-		const head = document.head;
 		// `document.head` may not be available at document-start
-		if (!head) {
+		if (!document.head) {
 			timerCheck = setTimeout(() => {
 				checkPage(mode);
 			}, 10);
@@ -58,29 +60,34 @@
 		}
 		// Medium posts have a <head> that looks something like this:
 		// <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# medium-com: http://ogp.me/ns/fb/medium-com#">
-		if (IS_MEDIUM.test(head.getAttribute("prefix"))) {
-			const hasInitialized = head.getAttribute(INIT) === "true";
-			// Add attribute to HTML for iframe to check parent
-			document.documentElement.setAttribute(THEME, true);
-			head.setAttribute(INIT, true);
-			getStorage().then(values => {
-				const isEnabled = values.enabled ? "enable" : "disable";
-				if (
-					hasInitialized &&
-					$(THEME) &&
-					mode.indexOf("toggle") > -1 // Check for toggleTab or toggleAll
-				) {
-					toggleStylesheet(mode);
-				} else if (!hasInitialized) {
-					addStylesheet(isEnabled);
-				}
-				// Inserts style before the link because it contains the css
-				// variable definitions
-				addVars(values.styles);
-			});
+		if (IS_MEDIUM.test(document.head.getAttribute("prefix"))) {
+			initDarkerMedium(mode);
 		} else if (isMediumIframe()) {
 			insertInIframe();
 		}
+	}
+
+	function initDarkerMedium(mode) {
+		const hasInitialized = document.head.getAttribute(INIT) === "true";
+		// Add attribute to HTML for iframe to check parent
+		document.documentElement.setAttribute(THEME, true);
+		document.head.setAttribute(INIT, true);
+		getStorage().then(values => {
+			const isEnabled = values.enabled ? "enable" : "disable";
+			if (
+				hasInitialized &&
+				$(THEME) &&
+				mode.indexOf("toggle") > -1 // Check for toggleTab or toggleAll
+			) {
+				toggleStylesheet(mode);
+			} else if (!hasInitialized) {
+				addStylesheet(isEnabled);
+			}
+			// Inserts style before the link because it contains the css
+			// variable definitions
+			addVars(values.styles);
+			initSyntaxHighlighting();
+		});
 	}
 
 	function processStyles(styles) {
@@ -133,13 +140,23 @@
 		try {
 			if (
 				window !== parent &&
-				// look for Darker Medium theme attribute
+				// Look for Darker Medium theme attribute
 				parent.document.documentElement.getAttribute(THEME)
 			) {
 				return true;
 			}
-		} catch (e) {}
+		} catch (err) {}
 		return false;
+	}
+
+	function onDOMLoaded() {
+		return new Promise(resolve => {
+			if (document.readyState === "loading") {
+				document.addEventListener("DOMContentLoaded", resolve, {once: true});
+			} else {
+				resolve();
+			}
+		});
 	}
 
 	function iframeLoaded() {
@@ -178,8 +195,35 @@
 			}
 		})
 		.catch(() => {
-			console.log("Unable to process iframe");
+			console.log("Unable to process iframe", window.location.href);
 		});
+	}
+
+	function initSyntaxHighlighting() {
+		onDOMLoaded().then(() => {
+			addSyntaxHighlighting();
+			let debounce;
+			new MutationObserver(() => {
+				clearTimeout(debounce);
+				debounce = setTimeout(() => {
+					if (document.querySelector(PRETTYPRINT)) {
+						addSyntaxHighlighting();
+					}
+				}, MUTATION_DEBOUNCE);
+			}).observe(document.body, {
+				attributes: true
+			});
+		});
+	}
+
+	function addSyntaxHighlighting() {
+		const pres = [...document.querySelectorAll(PRETTYPRINT)];
+		if (pres.length > 0) {
+			pres.forEach(el => {
+				el.classList.add("prettyprint");
+			});
+			chrome.runtime.sendMessage({prettify: true});
+		}
 	}
 
 	function addVars(styles) {
@@ -214,12 +258,8 @@
 			// Add to DOM (after </body>)
 			addToDOM($link);
 		} else {
-			document.addEventListener("DOMContentLoaded", () => {
-				// Add to DOM (after </body>)
-				addToDOM($link);
-			}, {
-				once: true
-			});
+			// Add to DOM (after </body>)
+			onDOMLoaded().then(() => addToDOM($link));
 		}
 	}
 
