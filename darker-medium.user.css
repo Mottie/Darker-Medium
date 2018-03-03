@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.3.0
+@version      1.3.1
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -18,7 +18,7 @@
 ==/UserStyle== */
 /* DO NOT EDIT THIS USERCSS - IT IS GENERATED AUTOMATICALLY */
 /* Update the supported Medium stories domains in "medium-sites.json" */
-@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.neufund.org"), domain("blog.timescale.com"), domain("codeburst.io"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("mystudentvoices.com"), domain("netbasal.com"), domain("ofdollarsanddata.com"), domain("omgfacts.com"), domain("praxis.fortelabs.co"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thelily.com"), domain("thinkgrowth.org"), domain("towardsdatascience.com"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
+@-moz-document domain("500ish.com"), domain("betterhumans.coach.me"), domain("blog.figma.com"), domain("blog.framer.com"), domain("blog.hackster.io"), domain("blog.neufund.org"), domain("blog.prototypr.io"), domain("blog.sindresorhus.com"), domain("blog.timescale.com"), domain("codeburst.io"), domain("fromupnorth.com"), domain("hackernoon.com"), domain("journal.thriveglobal.com"), domain("medium.com"), domain("melmagazine.com"), domain("mystudentvoices.com"), domain("netbasal.com"), domain("ofdollarsanddata.com"), domain("omgfacts.com"), domain("praxis.fortelabs.co"), domain("rantt.com"), domain("shift.newco.co"), domain("slack.engineering"), domain("thedesignteam.io"), domain("thelily.com"), domain("thinkgrowth.org"), domain("towardsdatascience.com"), domain("uxdesign.cc"), domain("uxplanet.org"), domain("writingcooperative.com"), regexp("https?://[^\/]*medium\.\S*") {
 
 :root {
 	--accent_header: acc_header;
