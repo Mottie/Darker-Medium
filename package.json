@@ -20,9 +20,9 @@
 	"devDependencies": {
 		"archiver": "^2.1.1",
 		"code-prettify": "^0.1.0",
-		"stylelint": "^8.4.0",
-		"updates": "^2.2.1",
-		"xo": "^0.18.2"
+		"stylelint": "^9.1.1",
+		"updates": "^2.4.1",
+		"xo": "^0.20.3"
 	},
 	"eslintIgnore": ["js/run_prettify.js"],
 	"xo": {
