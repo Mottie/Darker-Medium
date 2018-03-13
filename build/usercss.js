@@ -6,7 +6,7 @@ const sites = require("./medium-sites"),
 
 function buildMozDoc() {
 	const list = sites.map(fxn => `${fxn[0]}("${fxn[1]}")`);
-	return `@-moz-document ${list.join(", ")} {\n`;
+	return `@-moz-document ${list.join(",\n")} {\n`;
 }
 
 function replaceVar(str, name, replacement) {

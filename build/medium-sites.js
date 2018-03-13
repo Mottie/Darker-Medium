@@ -21,6 +21,7 @@ module.exports = [
 	["domain", "blog.sindresorhus.com"],
 	["domain", "blog.timescale.com"],
 	["domain", "codeburst.io"],
+	["domain", "engineering.hexacta.com"],
 	["domain", "fromupnorth.com"],
 	["domain", "hackernoon.com"],
 	["domain", "journal.thriveglobal.com"],
