@@ -76,7 +76,10 @@ The **advantages** of using a usercss are as follows:
 
 The **disadvantage** of this specific usercss is:
 
+* Syntax highlighting is not applied to code snippets, because it requires JavaScript processing.
 * Medium stories on unlisted domains will not be styled. If you want to report an unstyled Medium domain, please look in the [other issues](#other-issues) section for more details. A list of currently supported sites can be found in the [`medium-sites.js` file](./build/medium-sites.js).
+
+**NOTE**: The version number of the available web extension may lag behind the usercss because the usercss style needs updating to add more sites, while the web extension will detect them automatically.
 
 ## Usage
 
