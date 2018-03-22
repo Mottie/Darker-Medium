@@ -68,7 +68,7 @@ chrome.runtime.onMessage.addListener((request, sender) => {
 	// Add Google Prettify
 	if (request.prettify) {
 		chrome.tabs.executeScript(sender.tab.id, {
-			file: "js/run_prettify.js"
+			file: "run_prettify.js"
 		});
 	}
 });
