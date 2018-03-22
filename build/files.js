@@ -74,13 +74,8 @@ function updateSettings(name, tabs) {
 }
 
 function copyPrettify() {
-	readFile("node_modules/code-prettify/loader/run_prettify.js")
+	readFile("node_modules/code-prettify/src/run_prettify.js")
 		.then(code => {
-			// Don't load external CSS; remove `F.push("https://...prettify.css")`
-			code = "/* eslint-disable */\n" + code.replace(
-				/\w+\.push\(['"]https:\/\/cdn\.rawgit\.com[\w-/]+prettify\.css['"]\);/,
-				""
-			);
 			writeFile("./js/run_prettify.js", code);
 		});
 }
