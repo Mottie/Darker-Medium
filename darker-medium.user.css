@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.3.2
+@version      1.3.3
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -188,6 +188,7 @@ input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
 }
 
+.butterBar-message,
 .u-backgroundGreenNormal,
 .u-backgroundHighlightStrong,
 .radioInput.is-active:after,
@@ -277,6 +278,7 @@ hr.section-divider:before,
 }
 
 p,
+body,
 time,
 article,
 section,
@@ -698,6 +700,7 @@ a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 	font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
 	line-height: 1.4em !important;
 	padding: 10px !important;
+	border: 0 !important;
 }
 .pln { color: #c5c8c6 !important; }
 ol.linenums {
