@@ -635,6 +635,7 @@ a.link > img.u-maxSizeFullWidth.u-maxSizeFullHeight,
 	font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
 	line-height: 1.4em !important;
 	padding: 10px !important;
+	border: 0 !important;
 }
 .pln { color: #c5c8c6 !important; }
 ol.linenums {
