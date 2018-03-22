@@ -123,6 +123,7 @@ input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
 }
 
+.butterBar-message,
 .u-backgroundGreenNormal,
 .u-backgroundHighlightStrong,
 .radioInput.is-active:after,
@@ -212,6 +213,7 @@ hr.section-divider:before,
 }
 
 p,
+body,
 time,
 article,
 section,
