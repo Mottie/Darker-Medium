@@ -100,6 +100,7 @@ Open the Extension options (all settings are stored):
 * `Link Color` - Customize all link colors. This may include icons as well as links within the article.
 * `Link Hover` - Customize the link hover color.
 * `Include link underline` - Include or hide link underlines.
+* `Hide Footer` - Show or Hide the signup/get updates footer.
 * `Reset` - Restore the default settings.
 
 ![Options](images/Darker-Medium-options.png)
