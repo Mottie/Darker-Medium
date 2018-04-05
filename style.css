@@ -535,6 +535,7 @@ body.is-withMagicUnderlines .markup--anchor {
 	border-color: var(--accent_hover) !important;
 }
 
+.markup--user,
 .u-textColorNavy,
 .u-textColor--brandSage,
 .u-textColor--brandSea,
@@ -554,7 +555,9 @@ body .u-accentColor--buttonNormal .svgIcon,
 .u-tintSpectrum .svgIcon--logoMonogram svg,
 .clapButton:disabled .svgIcon--clap,
 .clapButton:disabled .svgIcon--clapFilled,
-.u-accentColor--buttonNormal .svgIcon--clap {
+.u-accentColor--buttonNormal .svgIcon--clap,
+.elevate-caps.u-accentColor--textNormal,
+.elevate-accent.u-accentColor--textNormal {
 	color: var(--accent_main) !important;
 	fill: var(--accent_main) !important;
 }
