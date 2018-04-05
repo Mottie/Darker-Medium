@@ -17,11 +17,11 @@ function replaceVar(str, name, replacement) {
 // Parameter files > [ style.css, template.user.css ]
 module.exports = function(files, version) {
 	// / * BUILD:VERSION * /
-	// @var color    acc_header    'Header background' / * BUILD:HEADER * /
-	// @var color    acc_main      'Main Accent Color' / * BUILD:MAIN * /
-	// @var color    acc_highlight 'Highlight Color'   / * BUILD:HIGHLIGHT * /
-	// @var color    acc_link      'Link Color'        / * BUILD:LINK * /
-	// @var color    acc_hover     'Link Hover Color'  / * BUILD:HOVER * /
+	// @var color    acc_header    "Header background" / * BUILD:HEADER * /
+	// @var color    acc_main      "Main Accent Color" / * BUILD:MAIN * /
+	// @var color    acc_highlight "Highlight Color"   / * BUILD:HIGHLIGHT * /
+	// @var color    acc_link      "Link Color"        / * BUILD:LINK * /
+	// @var color    acc_hover     "Link Hover Color"  / * BUILD:HOVER * /
 	// @var checkbox acc_underline "Link underline"    / * BUILD:UNDERLINE * /
 	// @var checkbox hide_footer   "Hide Footer"       / * BUILD:FOOTER * /
 	// /* BUILD:USER_CSS */

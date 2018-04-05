@@ -1,5 +1,5 @@
 /* Darker Medium
- * Copyright © 2017 Rob Garrison
+ * Copyright © 2018 Rob Garrison
  * License: MIT
  */
 /* global chrome */
