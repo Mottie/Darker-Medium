@@ -35,6 +35,7 @@ module.exports = [
 	["domain", "rantt.com"],
 	["domain", "shift.newco.co"],
 	["domain", "slack.engineering"],
+	["domain", "thebolditalic.com"],
 	["domain", "thedesignteam.io"],
 	["domain", "thelily.com"],
 	["domain", "thinkgrowth.org"],
