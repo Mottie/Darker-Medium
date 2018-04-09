@@ -92,6 +92,7 @@ article,
 }
 
 .js-trackedPromo,
+.heading-supplemental,
 .upgradePage-valuePropHeader,
 .u-background--brandDust,
 .u-background--brandPlum,
@@ -133,6 +134,7 @@ body .button.button--filled,
 .button.button--filled:hover,
 .button.button--filled:active,
 .overlay--dark .overlay-title,
+.buttonSwitch button[disabled],
 .u-accentColor--fillWhenActive.is-active,
 .button--primary.button--withChrome.is-active,
 .button--primary.button--withChrome.is-active:focus,
@@ -150,6 +152,10 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill) {
 	background-color: var(--accent_main) !important;
 	color: var(--accent_main_text) !important;
+}
+
+.buttonSwitch .button[disabled] {
+	box-shadow: 0 0 0 1px var(--accent_main) !important;
 }
 
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
@@ -199,6 +205,7 @@ footer .container > div {
 .u-textColorDarkest,
 .button--chromeless,
 .chartTabs .chartTab,
+.heading-supplemental,
 .homeContainer-nextUp,
 .popover-prePublishTags,
 .inputGroup-description,
@@ -333,6 +340,7 @@ h6 {
 
 .button,
 .list-item,
+.buttonSwitch,
 .chartTabs li,
 .EmbeddedTweet,
 .cardChromeless,
@@ -376,6 +384,7 @@ h6 {
 .jobs-teams__item:after,
 .stats-title--chart,
 .table--bordered tr,
+.heading-supplemental,
 .streamItem-cardInner,
 .textInput--underlined,
 .u-borderColor--brandSea,
