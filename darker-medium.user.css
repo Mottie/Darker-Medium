@@ -237,6 +237,7 @@ article,
 }
 
 .js-trackedPromo,
+.heading-supplemental,
 .upgradePage-valuePropHeader,
 .u-background--brandDust,
 .u-background--brandPlum,
@@ -278,6 +279,7 @@ body .button.button--filled,
 .button.button--filled:hover,
 .button.button--filled:active,
 .overlay--dark .overlay-title,
+.buttonSwitch button[disabled],
 .u-accentColor--fillWhenActive.is-active,
 .button--primary.button--withChrome.is-active,
 .button--primary.button--withChrome.is-active:focus,
@@ -297,6 +299,10 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 	color: var(--accent_main_text) !important;
 }
 
+.buttonSwitch .button[disabled] {
+	box-shadow: 0 0 0 1px var(--accent_main) !important;
+}
+
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span,
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill):not(.button--follow) {
@@ -309,7 +315,8 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 .markup--quote code,
 .markup--quote strong,
 .u-backgroundTransparentWhiteDarker,
-.u-backgroundTransparentWhiteDarkest {
+.u-backgroundTransparentWhiteDarkest,
+.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
 	background-color: transparent !important;
 }
 
@@ -344,6 +351,7 @@ footer .container > div {
 .u-textColorDarkest,
 .button--chromeless,
 .chartTabs .chartTab,
+.heading-supplemental,
 .homeContainer-nextUp,
 .popover-prePublishTags,
 .inputGroup-description,
@@ -478,6 +486,7 @@ h6 {
 
 .button,
 .list-item,
+.buttonSwitch,
 .chartTabs li,
 .EmbeddedTweet,
 .cardChromeless,
@@ -521,6 +530,7 @@ h6 {
 .jobs-teams__item:after,
 .stats-title--chart,
 .table--bordered tr,
+.heading-supplemental,
 .streamItem-cardInner,
 .textInput--underlined,
 .u-borderColor--brandSea,
@@ -547,11 +557,6 @@ h6 {
 
 .chartTabs .chartTab {
 	border-left-color: var(--color_brd_33) !important;
-}
-
-/* header exanding search input */
-.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
-	border: 1px solid var(--color_brd_33) !important;
 }
 
 .u-borderTopLightest80:before,
