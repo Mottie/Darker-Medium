@@ -170,7 +170,8 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 .markup--quote code,
 .markup--quote strong,
 .u-backgroundTransparentWhiteDarker,
-.u-backgroundTransparentWhiteDarkest {
+.u-backgroundTransparentWhiteDarkest,
+.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
 	background-color: transparent !important;
 }
 
@@ -411,11 +412,6 @@ h6 {
 
 .chartTabs .chartTab {
 	border-left-color: var(--color_brd_33) !important;
-}
-
-/* header exanding search input */
-.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
-	border: 1px solid var(--color_brd_33) !important;
 }
 
 .u-borderTopLightest80:before,
