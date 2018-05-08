@@ -21,10 +21,12 @@
 		"archiver": "^2.1.1",
 		"code-prettify": "^0.1.0",
 		"stylelint": "^9.2.0",
-		"updates": "^2.4.1",
-		"xo": "^0.20.3"
+		"updates": "^2.7.3",
+		"xo": "^0.21.0"
 	},
-	"eslintIgnore": ["js/run_prettify.js"],
+	"eslintIgnore": [
+		"js/run_prettify.js"
+	],
 	"xo": {
 		"envs": [
 			"browser",
