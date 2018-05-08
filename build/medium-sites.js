@@ -68,6 +68,7 @@ module.exports = [
 	["domain", "howwegettonext.com"],
 	["domain", "injusticetoday.com"],
 	["domain", "journal.thriveglobal.com"],
+	["domain", "learn.fontself.com"],
 	["domain", "loremipsum.ueno.co"],
 	["domain", "m.signalvnoise.com"],
 	["domain", "media.consensys.net"],
