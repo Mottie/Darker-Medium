@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.3.5
+@version      1.3.6
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -75,6 +75,7 @@ domain("hackernoon.com"),
 domain("howwegettonext.com"),
 domain("injusticetoday.com"),
 domain("journal.thriveglobal.com"),
+domain("learn.fontself.com"),
 domain("loremipsum.ueno.co"),
 domain("m.signalvnoise.com"),
 domain("media.consensys.net"),
@@ -286,7 +287,6 @@ body .button.button--filled,
 .button--primary.button--withChrome.is-active:hover,
 .button--primary.button--withChrome.is-active:active,
 body .button--withChrome.is-active .button-label.button-activeState,
-body.is-withMagicUnderlines .markup--quote .markup--anchor,
 .js-floatingMultirecommendCount.u-accentColor--backgroundNormal,
 .js-stickyFooter .button--dark.button--activity.is-counter,
 .js-stickyFooter .button--dark.button--primary.button--withChrome.is-active,
@@ -451,6 +451,10 @@ strong,
 .uiScale-ui--large .ui-caps,
 .uiScale-ui--small .ui-caps,
 .uiScale-ui--regular .ui-caps,
+.notificationsList-note,
+.notificationsList-title,
+.notificationsList-author,
+.notificationsList-milestone,
 .popover-inner .popover-title,
 .chartTabs .is-active .chartTab,
 .uiScale-ui--large.ui-brandTitle,
@@ -756,6 +760,7 @@ body .postArticle.is-withAccentColors .markup--query,
 .quoteItem .markup--highlight,
 .u-accentColor--highlightFaint,
 body.is-withMagicUnderlines .markup--quote.is-other,
+body.is-withMagicUnderlines .markup--quote .markup--anchor,
 html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
 	background: var(--accent_highlight) !important;
 	border-color: var(--accent_highlight) !important;
