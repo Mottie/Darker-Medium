@@ -26,6 +26,7 @@ module.exports = [
 	["domain", "blog.gofundme.com"],
 	["domain", "blog.gojekengineering.com"],
 	["domain", "blog.goodaudience.com"],
+	["domain", "blog.graphql.guide"],
 	["domain", "blog.hackster.io"],
 	["domain", "blog.heartsupport.com"],
 	["domain", "blog.inkdrop.info"],
