@@ -96,7 +96,7 @@
 			let style = styles[name];
 			if (name === "footer") {
 				accents += `  --hide_footer: ${style ? "none" : "block"};`;
-				return;
+				return; // eslint-disable-next-line no-else-return
 			} else if (name === "underline") {
 				// If underline is disabled, set the alpha channel to zero to make it
 				// transparent
@@ -193,8 +193,7 @@
 					addToDOM(link);
 				});
 			}
-		})
-		.catch(() => {
+		}).catch(() => {
 			console.log("Unable to process iframe", window.location.href);
 		});
 	}

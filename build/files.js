@@ -12,7 +12,7 @@ const fs = require("fs"),
 			[\\s\\S]+
 			\\/\\*\\s*BUILD:SETTINGS_END\\s*\\*\\/
 		`.replace(/\s/g, ""),
-		"g"
+		"g" // eslint-disable-line indent
 	);
 
 function readFile(name) {

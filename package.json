@@ -20,9 +20,9 @@
 	"devDependencies": {
 		"archiver": "^2.1.1",
 		"code-prettify": "^0.1.0",
-		"stylelint": "^9.2.0",
-		"updates": "^2.7.3",
-		"xo": "^0.21.0"
+		"stylelint": "^9.4.0",
+		"updates": "^4.1.2",
+		"xo": "^0.22.0"
 	},
 	"eslintIgnore": [
 		"js/run_prettify.js"
@@ -50,7 +50,9 @@
 				}
 			],
 			"space-before-function-paren": 0,
-			"unicorn/no-abusive-eslint-disable": 0
+			"unicorn/no-abusive-eslint-disable": 0,
+			"unicorn/no-hex-escape": 0,
+			"unicorn/escape-case": 0
 		}
 	}
 }
