@@ -12,7 +12,7 @@
 	--color_txt_ee: #eee;
 }
 
-.js-stickyFooter {
+.js-stickyFooter, .postMeterBar {
 	display: var(--hide_footer) !important;
 }
 
