@@ -159,7 +159,6 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 }
 
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
-body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span,
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill):not(.button--follow) {
 	background-color: var(--accent_link) !important;
 	color: var(--color_bkg_0d) !important;
@@ -171,7 +170,8 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 .markup--quote strong,
 .u-backgroundTransparentWhiteDarker,
 .u-backgroundTransparentWhiteDarkest,
-.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
+.inputGroup.metabar-predictiveSearch .textInput:not(:focus),
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span {
 	background-color: transparent !important;
 }
 
