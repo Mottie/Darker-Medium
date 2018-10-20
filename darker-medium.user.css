@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.3.7
+@version      1.3.8
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -26,6 +26,7 @@ domain("artplusmarketing.com"),
 domain("bettereveryday.vc"),
 domain("betterhumans.coach.me"),
 domain("blog.angularindepth.com"),
+domain("blog.bitsrc.io"),
 domain("blog.codacy.com"),
 domain("blog.cloudboost.io"),
 domain("blog.creandum.com"),
@@ -165,7 +166,7 @@ regexp("https?://[^\/]*medium\.\S*") {
 	--color_txt_ee: #eee;
 }
 
-.js-stickyFooter {
+.js-stickyFooter, .postMeterBar {
 	display: var(--hide_footer) !important;
 }
 
@@ -312,7 +313,6 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 }
 
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill),
-body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span,
 body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:not(.clapButton--largePill):not(.button--follow) {
 	background-color: var(--accent_link) !important;
 	color: var(--color_bkg_0d) !important;
@@ -324,7 +324,8 @@ body .u-tintSpectrum .u-accentColor--buttonNormal.button--withChrome.is-active:n
 .markup--quote strong,
 .u-backgroundTransparentWhiteDarker,
 .u-backgroundTransparentWhiteDarkest,
-.inputGroup.metabar-predictiveSearch .textInput:not(:focus) {
+.inputGroup.metabar-predictiveSearch .textInput:not(:focus),
+body .u-tintSpectrum .u-accentColor--buttonNormal.button--filled:not(.clapButton--largePill) span {
 	background-color: transparent !important;
 }
 
@@ -779,8 +780,10 @@ body .postArticle.is-withAccentColors .markup--query,
 .markup--highlight,
 .quoteItem .markup--highlight,
 .u-accentColor--highlightFaint,
+body.is-withMagicUnderlines .markup--quote.is-me,
 body.is-withMagicUnderlines .markup--quote.is-other,
 body.is-withMagicUnderlines .markup--quote .markup--anchor,
+html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-me,
 html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
 	background: var(--accent_highlight) !important;
 	border-color: var(--accent_highlight) !important;
