@@ -145,7 +145,7 @@
 			) {
 				return true;
 			}
-		} catch (err) {}
+		} catch (error) {}
 		return false;
 	}
 

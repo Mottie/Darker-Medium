@@ -13,7 +13,7 @@
 	},
 	"homepage": "https://github.com/Mottie/Darker-Medium",
 	"scripts": {
-		"test": "xo && stylelint --silent --color -- style.css gist.css options/*.css",
+		"test": "xo && stylelint --quiet --color -- style.css gist.css options/*.css",
 		"update": "updates -u && npm install",
 		"build": "node build/build.js"
 	},

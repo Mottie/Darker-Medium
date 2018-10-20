@@ -35,6 +35,6 @@ del("darker-medium.zip")
 		return createZip("darker-medium.xpi", manifest);
 	})
 	.then(() => console.log("\x1b[32m%s\x1b[0m", "Darker-Medium build complete"))
-	.catch(err => {
-		throw err;
+	.catch(error => {
+		throw error;
 	});
