@@ -626,8 +626,10 @@ body .postArticle.is-withAccentColors .markup--query,
 .markup--highlight,
 .quoteItem .markup--highlight,
 .u-accentColor--highlightFaint,
+body.is-withMagicUnderlines .markup--quote.is-me,
 body.is-withMagicUnderlines .markup--quote.is-other,
 body.is-withMagicUnderlines .markup--quote .markup--anchor,
+html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-me,
 html body.is-withMagicUnderlines .postArticle.is-withAccentColors .markup--quote.is-other {
 	background: var(--accent_highlight) !important;
 	border-color: var(--accent_highlight) !important;
