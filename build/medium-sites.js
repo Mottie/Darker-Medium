@@ -19,6 +19,7 @@ module.exports = [
 	["domain", "bettereveryday.vc"],
 	["domain", "betterhumans.coach.me"],
 	["domain", "blog.angularindepth.com"],
+	["domain", "blog.bitsrc.io"],
 	["domain", "blog.codacy.com"],
 	["domain", "blog.cloudboost.io"],
 	["domain", "blog.creandum.com"],

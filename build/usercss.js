@@ -14,7 +14,7 @@ function replaceVar(str, name, replacement) {
 	return str.replace(regex, replacement);
 }
 
-// Parameter files > [ style.css, template.user.css ]
+// Parameter files > [ style.css, gist.css, template.user.css ]
 module.exports = function(files, version) {
 	// / * BUILD:VERSION * /
 	// @var color    acc_header    "Header background" / * BUILD:HEADER * /
