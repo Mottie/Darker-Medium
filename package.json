@@ -14,14 +14,14 @@
 	"homepage": "https://github.com/Mottie/Darker-Medium",
 	"scripts": {
 		"test": "xo && stylelint --silent --color -- style.css gist.css options/*.css",
-		"update": "updates -u && npm update",
+		"update": "updates -u && npm install",
 		"build": "node build/build.js"
 	},
 	"devDependencies": {
 		"archiver": "^3.0.0",
 		"code-prettify": "^0.1.0",
-		"stylelint": "^9.5.0",
-		"updates": "^4.3.0",
+		"stylelint": "^9.6.0",
+		"updates": "^5.1.1",
 		"xo": "^0.23.0"
 	},
 	"eslintIgnore": [
