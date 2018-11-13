@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.3.8
+@version      1.4.0
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -45,6 +45,7 @@ domain("blog.leanstack.com"),
 domain("blog.lftechnology.com"),
 domain("blog.logrocket.com"),
 domain("blog.markgrowth.com"),
+domain("blog.mode7games.com"),
 domain("blog.neufund.org"),
 domain("blog.pacific-content.com"),
 domain("blog.producthunt.com"),
@@ -105,6 +106,7 @@ domain("ppcdept.com"),
 domain("praxis.fortelabs.co"),
 domain("proandroiddev.com"),
 domain("psiloveyou.xyz"),
+domain("quipblog.com"),
 domain("rantt.com"),
 domain("read.compassofdesign.com"),
 domain("ryanluikens.com"),
@@ -152,10 +154,12 @@ regexp("https?://[^\/]*medium\.\S*") {
 	--accent_underline: alpha(acc_link, 0.68);
 	--hide_footer: hide_footer ? none : block;
 }
+
 :root {
 	--color_bkg_0d: #0d0d0d;
 	--color_bkg_11: #111;
 	--color_bkg_1b: #1b1b1b;
+	--color_bkg_ff: #fff;
 
 	--color_brd_33: #333;
 
@@ -277,6 +281,15 @@ article,
 
 input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
+}
+
+figure img {
+	background-color: var(--color_bkg_ff) !important;
+	opacity: .5 !important;
+}
+
+figure:hover img {
+	opacity: 1 !important;
 }
 
 .butterBar-message,
@@ -443,6 +456,10 @@ a.link.u-textColorDarker,
 
 .u-textColorNormal .circleCountdown-fill {
 	stroke: var(--color_txt_aa) !important;
+}
+
+.u-fillTransparentBlackDarker {
+	fill: var(--color_txt_aa) !important;
 }
 
 strong,
@@ -988,3 +1005,38 @@ color: #cf6a4c !important;
 }
 
 }
+
+@-moz-document url-prefix("https://medium.com/@"), url-prefix("https://medium.com/me/") {
+  /* UserCSS only: weird profile pages - https://medium.com/@wowmotty */
+  nav.m, div[data-reactroot] > nav {
+    background: var(--accent_header) !important;
+  }
+
+  a {
+    color: var(--accent_main) !important;
+    border-color: var(--accent_main) !important;
+  }
+
+  a svg {
+    fill: currentColor !important;
+    filter: none !important;
+  }
+
+  ul, div.k, div[style*="left"]:after {
+    background: var(--color_bkg_11) !important;
+    border-color: var(--color_brd_33) !important;
+  }
+
+  li, div[style*="absolute"] {
+    border-color: var(--color_brd_33) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, div, span {
+    color: var(--color_txt_aa) !important;
+  }
+
+  svg {
+    filter: invert(100%) !important;
+  }
+}
+
