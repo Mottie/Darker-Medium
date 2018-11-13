@@ -2,6 +2,7 @@
 	--color_bkg_0d: #0d0d0d;
 	--color_bkg_11: #111;
 	--color_bkg_1b: #1b1b1b;
+	--color_bkg_ff: #fff;
 
 	--color_brd_33: #333;
 
@@ -123,6 +124,15 @@ article,
 
 input::-webkit-calendar-picker-indicator:hover {
 	background: var(--color_bkg_1b) !important;
+}
+
+figure img {
+	background-color: var(--color_bkg_ff) !important;
+	opacity: .5 !important;
+}
+
+figure:hover img {
+	opacity: 1 !important;
 }
 
 .butterBar-message,
@@ -289,6 +299,10 @@ a.link.u-textColorDarker,
 
 .u-textColorNormal .circleCountdown-fill {
 	stroke: var(--color_txt_aa) !important;
+}
+
+.u-fillTransparentBlackDarker {
+	fill: var(--color_txt_aa) !important;
 }
 
 strong,
