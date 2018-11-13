@@ -83,9 +83,10 @@ function copyPrettify() {
 // Build darker-medium.user.css from template and style.css
 function buildUserCSS(version) {
 	const files = [
+		"./build/template.user.css", // Must be first in this list
+		"./style-profiles.css",
 		"./style.css",
-		"./gist.css",
-		"./build/template.user.css" // Must be last in this list
+		"./gist.css"
 	];
 	return Promise.all(files.map(name => readFile(name)))
 		.then(files => writeFile(

@@ -14,7 +14,7 @@ function replaceVar(str, name, replacement) {
 	return str.replace(regex, replacement);
 }
 
-// Parameter files > [ style.css, gist.css, template.user.css ]
+// Parameter files > [ template.user.css, style-profiles.css, style.css, gist.css ]
 module.exports = function(files, version) {
 	// / * BUILD:VERSION * /
 	// @var color    acc_header    "Header background" / * BUILD:HEADER * /
@@ -25,12 +25,15 @@ module.exports = function(files, version) {
 	// @var checkbox acc_underline "Link underline"    / * BUILD:UNDERLINE * /
 	// @var checkbox hide_footer   "Hide Footer"       / * BUILD:FOOTER * /
 	// /* BUILD:USER_CSS */
-	let usercss = files.pop();
+	let usercss = files.shift();
 
 	usercss = replaceVar(usercss, "version", version);
 	Object.keys(settings).forEach(key => {
 		usercss = replaceVar(usercss, key, settings[key]);
 	});
+	usercss = replaceVar(usercss, "profiles", files.shift());
+
+	// Style.css + gist.css wrapped by @-moz-document rule
 	usercss = replaceVar(usercss, "mozdoc", buildMozDoc());
 	// Remove :root{} from gist.css; otherwise, it'll be duplicated in the
 	// usercss, and is needed in the gist style injected by the extension into
