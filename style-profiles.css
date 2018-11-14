@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://medium.com/@"), url-prefix("https://medium.com/me/") {
+@-moz-document regexp("^https://medium.com/@[^/]+$"), url-prefix("https://medium.com/me/") {
   /* UserCSS only: weird profile pages - https://medium.com/@wowmotty */
   nav.m, div[data-reactroot] > nav {
     background: var(--accent_header) !important;
