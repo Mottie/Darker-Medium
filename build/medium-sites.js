@@ -46,6 +46,7 @@ module.exports = [
 	["domain", "blog.realkinetic.com"],
 	["domain", "blog.sindresorhus.com"],
 	["domain", "blog.sketchapp.com"],
+	["domain", "blog.sourcerer.io"],
 	["domain", "blog.thunkable.com"],
 	["domain", "blog.timescale.com"],
 	["domain", "blog.usejournal.com"],
