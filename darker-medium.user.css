@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Darker Medium
-@version      1.4.1
+@version      1.4.2
 @description  Read Medium stories with happy eyes
 @namespace    https://github.com/Mottie
 @author       Rob Garrison
@@ -32,6 +32,7 @@ domain("blog.cloudboost.io"),
 domain("blog.creandum.com"),
 domain("blog.doist.com"),
 domain("blog.figma.com"),
+domain("blog.fontawesome.com"),
 domain("blog.framer.com"),
 domain("blog.gofundme.com"),
 domain("blog.gojekengineering.com"),
@@ -53,6 +54,7 @@ domain("blog.prototypr.io"),
 domain("blog.realkinetic.com"),
 domain("blog.sindresorhus.com"),
 domain("blog.sketchapp.com"),
+domain("blog.sourcerer.io"),
 domain("blog.thunkable.com"),
 domain("blog.timescale.com"),
 domain("blog.usejournal.com"),
@@ -70,6 +72,7 @@ domain("crossingenres.com"),
 domain("dearoldpeople.com"),
 domain("digitalculturist.com"),
 domain("eand.co"),
+domain("edgecoders.com"),
 domain("eidolon.pub"),
 domain("electricliterature.com"),
 domain("engineering.hexacta.com"),
