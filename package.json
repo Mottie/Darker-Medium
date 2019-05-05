@@ -20,8 +20,8 @@
 	"devDependencies": {
 		"archiver": "^3.0.0",
 		"code-prettify": "^0.1.0",
-		"stylelint": "^9.10.1",
-		"updates": "^7.1.1",
+		"stylelint": "^10.0.1",
+		"updates": "^8.0.2",
 		"xo": "^0.24.0"
 	},
 	"eslintIgnore": [
