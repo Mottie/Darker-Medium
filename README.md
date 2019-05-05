@@ -66,7 +66,9 @@ Install it for:
 
 [Stylus](http://add0n.com/stylus.html) supports user.css file formats. When a "raw" version of `darker-medium.user.css` from this repository (link below) is opened in the browser, Stylus will prompt you to install the style. For more details, see the [usercss documentation](https://github.com/openstyles/stylus/wiki/Usercss).
 
-[![Install the usercss](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css)
+[![Install the main usercss](https://img.shields.io/badge/Install%20main%20usercss%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium.user.css)
+
+[![Install the extras usercss](https://img.shields.io/badge/Install%20extras%20usercss%20with-Stylus-285959.svg)](https://raw.githubusercontent.com/Mottie/Darker-Medium/master/darker-medium-extras.user.css) (Medium.com profile & topic page styling)
 
 The **advantages** of using a usercss are as follows:
 
@@ -119,6 +121,8 @@ And don't worry if you've never contributed to an open-source project before, yo
 
 ### Style issues
 
+* The profile & topic pages of Medium.com _do not use_ the same css framework as the main stories pages. To make these pages
+  dark, install the `darker-medium-extras.user.css` usercss style linked above (Stylus is needed).
 * If it's a public page, you'll only need to report the URL and any steps needed to show the problematic area.
 * If you need a membership to access the page, then please include the HTML and related CSS:
   * First, you'll need to right click on top of the element, and select "Inspect" or "Inspect Element".
