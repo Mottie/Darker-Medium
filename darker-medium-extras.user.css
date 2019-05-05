@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name         Darker Medium Profiles/Topics
+@version      1.0.0
+@description  Read Medium story profiles & topics with happy eyes
+@namespace    https://github.com/Mottie
+@author       Rob Garrison
+@homepageURL  https://github.com/Mottie/Darker-Medium
+@supportURL   https://github.com/Mottie/Darker-Medium/issues
+@updateURL    https://mottie.github.io/Darker-Medium/darker-medium-extras.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document url-prefix("https://medium.com/") {
+  /* UserCSS only (not part of the extension):
+    profile pages - https://medium.com/@blah
+    topics pages - https://medium.com/topic/self (etc)
+  */
+  body, .c {
+    background: var(--color_bkg_11) !important;
+    color: var(--color_txt_aa) !important;
+  }
+  nav.m {
+    background: var(--accent_header) !important;
+  }
+
+  a, .gx, .gy {
+    color: var(--accent_main) !important;
+    border-color: var(--accent_main) !important;
+  }
+
+  a svg {
+    fill: currentColor !important;
+    filter: none !important;
+  }
+
+  div.k, .dn {
+    background: var(--color_bkg_11) !important;
+    border-color: var(--color_brd_33) !important;
+  }
+
+  li {
+    border-color: var(--color_brd_33) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  div,
+  span {
+    color: var(--color_txt_aa) !important;
+  }
+
+  svg {
+    filter: invert(100%) !important;
+  }
+}
