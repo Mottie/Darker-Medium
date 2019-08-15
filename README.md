@@ -1,3 +1,15 @@
+# **ALERT!**
+
+Medium has completely changed their CSS framework, so this extension and the userstyle won't work any more.
+
+The previous framework used desriptive class names like "u-backgroundBlueGrey"; but now everything is one to two letters long, e.g. "a b c"
+
+![](https://user-images.githubusercontent.com/136959/63128307-2fc70c00-bf7a-11e9-9838-c4ae605e0520.png)
+
+I don't have the time, nor the patience to decrypt that mess. :crying_cat_face:
+
+-------
+
 # <img src="icons/icon128.png" width="60px" align="right"> Darker Medium [![tags][tag-img]][tag-url] [![devDependency Status][david-dev-img]][david-dev-url]
 
 [tag-url]: https://github.com/Mottie/Darker-Medium/tags
